@@ -1,0 +1,35 @@
+﻿@model ArticleWithCommentModel
+<div>
+        <h3>@Model._articlePreview.Title</h3>
+        <p> @Html.Raw(Model._articlePreview.FullText)</p>
+</div>
+<form style="border:solid" >
+    @foreach (var com in Model._comments)
+    {
+        <div readonly class="form-control-plaintext">
+            <b>@com._userName </b>
+        </div>
+            <div readonly class="form-control-plaintext">
+            <p>@com._comment</p>
+        </div>
+        <hr />
+    }
+</form>
+@{
+    if(Context.User.Claims.Any())
+    {
+        <h6>@Context.User.Identity.Name</h6>
+        <form asp-controller="Article" asp-action="AddComment">            
+            <input type="hidden" asp-for="_comment._articleID" value="@Model._articlePreview.Id" />
+            <input type="hidden" asp-for="_comment._userName" value="@Context.User.Identity.Name" />
+            <input type="text" asp-for="_comment._comment"/>
+            <button class="btn btn-primary" type="submit" >Отправить</button>
+        </form>
+    } else
+    {
+        <h4>Комментарии могут оставлять только авторизованные пользователи</h4>
+    }
+}
+
+
+

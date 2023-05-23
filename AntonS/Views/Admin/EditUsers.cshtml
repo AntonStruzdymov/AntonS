@@ -1,0 +1,15 @@
+﻿@model UsersListModel
+
+<h1>
+    Pick user to edit
+</h1>
+<form asp-controller="Admin" asp-action="EditUser" method="get">
+    <select asp-for="ChosenUserId" class="form-select">
+        <option selected>Pick entity to work with</option>
+        @foreach (UsersListModel user in Model.Users)
+        {
+          <option value="@user.Id">@user.Name @user.Surname</option>
+        }
+    </select>
+    <button class="btn btn-outline-secondary" type="submit" value="OK">Confirm</button>
+</form>

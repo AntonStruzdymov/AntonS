@@ -1,0 +1,29 @@
+﻿@model ArticleCreateModel
+    
+<form asp-action="Create" asp-controller="Article" asp-antiforgery="true" method="post">
+    <div class="mb-3">
+        <label class="form-label" asp-for="Title">Title</label>
+        <input class="form-control" type="text" asp-for="Title" />
+        <span asp-validation-for="Title"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Description">Short Description</label>
+        <textarea class="form-control" rows="5" asp-for="Description"></textarea>
+        <span asp-validation-for="Description"></span>
+</div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="FullText">Text</label>
+        <textarea class="form-control" rows="10" asp-for="FullText"></textarea>
+        <span asp-validation-for="FullText"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="SourceID">Source</label>
+        <select class="form-select" asp-for="SourceID" asp-items="@Model.AvailableSources"></select>
+        <span asp-validation-for="SourceID"></span>
+    </div>
+    <input type="hidden" asp-for="AvailableSources"/>
+    <div>
+        <input type="submit" value="Confirm" />        
+        <a class="btn-secondary m-lg-4" style="border:solid; border-color:black " asp-action="Index" asp-controller="Article" method="get" >Cancel</a>       
+    </div>
+</form>

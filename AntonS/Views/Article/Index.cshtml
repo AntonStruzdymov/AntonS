@@ -1,0 +1,27 @@
+﻿@model ArticlesListModel
+
+<form action="/Article/SearchedArticlesList"  method=Post class="form-text col-6 "  >
+    @Html.TextBoxFor(model=>model.Searched)
+    <input type="submit" value="Submit"/>
+    <a class="btn bg-primary col-6"   asp-action="Create" asp-controller="Article" >Create</a>    
+</form>  
+
+<div>
+    @foreach (var ar in Model.Articles)
+    {
+            <div>
+                <b>@ar.Id</b> - @ar.Title
+            </div>
+            <div>
+                <p>@Html.Raw(ar.Description)</p>
+            </div> 
+            <div>                    
+                    <a href="@Url.Action("ArticleDetailsWithComments", "Article", new {id = ar.Id})" class="btn btn-secondary" role="button"  >Read more...</a>
+            </div>
+            <hr/>
+    }
+</div>
+
+
+
+    

@@ -1,0 +1,87 @@
+﻿@model RegisterPageModel
+<h3>Register</h3>
+
+<form asp-action="Register" asp-controller="Login" asp-antiforgery="true" method="post">
+    <div class="mb-3">
+        <label class="form-label" asp-for="Name">User Name</label>
+        <input class="form-control" type="name" asp-for="Name" />
+     </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Surname">User Surname</label>
+        <input class="form-control" type="surname" asp-for="Surname" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Email">Email</label>
+        <input class="form-control" type="email" asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Password">Password</label>
+        <input class="form-control" type="password" asp-for="Password" />
+        <span asp-validation-for="Password"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="PasswordConfirmation">Password Confirmation</label>
+        <input class="form-control" type="password" asp-for="PasswordConfirmation" />
+        <span asp-validation-for="PasswordConfirmation"></span>
+    </div>
+    <div>
+        <input class="btn bg-primary" type="submit" value="Confirm" style="color:black; background-color:green; border-color:black" />
+    </div>
+</form>
+
+@section Scripts
+    {
+        <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+}
+<style>
+body{
+    margin:auto;
+    width:auto;
+    padding:10px;
+    background-color:mediumpurple;
+    font-size:14px;
+    font-family:Verdana;    
+}
+.form-control{
+  color: red;
+  background-color: lightgreen;
+  background-clip: padding-box;
+  border: 3px solid;  
+  border-radius: 20px;  
+}
+.form-control:focus {
+  color: blue;
+  background-color: coral;
+  border-color: deeppink;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+.btn_bg-primary{
+  background-color: lightgreen;
+  border:solid, 10px;
+  border-color:chartreuse;
+  border-radius:20px;
+  color: purple;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration:underline;
+  display: inline-block;
+  font-size: 16px;
+}
+form{
+  position:absolute;
+  align-content:center;
+  top: 20%;
+  left:40%;
+  width: 20%;
+  text-align: center;
+  font-size: 18px;
+}
+h3{
+    color: tomato;
+    text-align:center;
+
+}
+</style>

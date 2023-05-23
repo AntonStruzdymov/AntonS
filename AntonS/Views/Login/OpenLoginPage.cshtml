@@ -1,0 +1,76 @@
+﻿@model LoginPageModel
+
+
+
+<form asp-action="Login" asp-controller="Login" asp-antiforgery="true" method="post">
+    <h3>Login</h3>
+    <div class="mb-3">
+        <label class="form-label" asp-for="UserName" title="UserName"></label>
+        <input class="form-control" type="email" asp-for="UserName" />
+        <span asp-validation-for="UserName"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Password" title="Password"></label>
+        <input class="form-control" type="password" asp-for="Password" />
+        <span asp-validation-for="Password"></span>
+    </div>
+    <div>
+        <input class="btn_bg-primary" type="submit" value="Confirm" />
+    </div>
+</form>
+
+@section Scripts
+    {
+        <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+}
+<style>
+body{
+    margin:auto;
+    width:auto;
+    padding:10px;
+    background-color:mediumpurple;
+    font-size:14px;
+    font-family:Verdana;    
+}
+.form-control{
+  color: red;
+  background-color: lightgreen;
+  background-clip: padding-box;
+  border: 3px solid;  
+  border-radius: 20px;  
+}
+.form-control:focus {
+  color: blue;
+  background-color: coral;
+  border-color: deeppink;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+.btn_bg-primary{
+  background-color: lightgreen;
+  border:solid, 10px;
+  border-color:chartreuse;
+  border-radius:20px;
+  color: purple;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration:underline;
+  display: inline-block;
+  font-size: 16px;
+}
+form{
+  position:absolute;
+  align-content:center;
+  top: 30%;
+  left:40%;
+  width: 20%;
+  text-align: center;
+  font-size: 18px;
+}
+h3{
+    color: tomato;
+    text-align:center;
+
+}
+</style>

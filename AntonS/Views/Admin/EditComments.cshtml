@@ -1,0 +1,14 @@
+﻿@model ArticlesListModel
+<h1>
+    Pick article to edit comments
+</h1>
+<form asp-controller="Admin" asp-action="EditArticle" method="get">
+    <select asp-for="Id" class="form-select">
+        <option selected>Pick entity to work with</option>
+        @foreach (ArticlesListModel article in Model.Articles)
+        {
+                      <option value="@article.Id">@article.Title</option>
+        }
+    </select>
+    <button class="btn btn-outline-secondary" type="submit" value="OK">Confirm</button>
+</form>

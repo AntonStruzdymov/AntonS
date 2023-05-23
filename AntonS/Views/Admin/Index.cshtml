@@ -1,0 +1,17 @@
+﻿@model AdminMainPageModel
+
+<h1>
+    This is an ADMIN only page!
+</h1>
+
+<a class="btn btn-danger" asp-area="" asp-controller="Admin" asp-action="GetNews">GetNews</a>
+
+<form asp-controller="Admin" asp-action="ChangeEntity" method="post">
+    <select asp-for="EntityName" class="form-select">
+        <option selected>Pick entity to work with</option>
+        <option value="User">Users</option>
+        <option value="Article">Articles</option>
+        <option value="Comment">Comments</option>
+    </select>
+    <button class="btn btn-outline-secondary" type="submit" value="OK">Confirm</button>
+</form>

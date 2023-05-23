@@ -1,0 +1,35 @@
+﻿@model ChangeUserModel
+
+
+<h2>
+    @Model.Id
+    @Model.Name
+    @Model.Surname
+</h2>
+
+<form asp-controller="Admin" asp-action="ChangeUser" method="post">
+    <input type="hidden" asp-for="Id" value="@Model.Id" />
+    <input type="text" asp-for="Name" placeholder="Введите Имя"/>
+    <input type="text" asp-for="Surname" placeholder="Введите Фамилию"/>
+    <input type="text" asp-for="Email" placeholder="Введите Email"/>
+    <input type="text" asp-for="Password" placeholder="Введите пароль"/>
+    <input type="number" asp-for="AcessLevelID" placeholder="Введите код уровня доступа"/>
+    <button class="btn btn-secondary" type="submit" >Confirm</button>       
+</form>
+
+<form asp-controller="Admin" asp-action="ChangeUser" method="post"  >
+    <input type="hidden" asp-for="DeleteUser" value="true"/>
+    <input type="hidden" asp-for="Id" value="@Model.Id" />
+    <button class="btn btn-primary" type="submit" >Delete User</button>
+</form>
+
+<style>
+    form {
+        background-color:aquamarine;
+        text-align: justify-all;
+        border-color: black;
+        border: 5px dashed;
+        color: red;        
+    }
+</style>
+    
