@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,6 +19,7 @@ namespace AntonS.Abstractions.Services
         Task<List<UserDTO>> GetAllUsersAsync();
         Task RemoveUser(int id);
         Task UpdateUserAsync(int id, List<PatchDTO> patchDtos);
+        Task<List<Claim>> GetUserClaimsAsync(UserDTO user);
 
     }
 }

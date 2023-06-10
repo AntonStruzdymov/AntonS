@@ -1,8 +1,7 @@
-﻿namespace AntonS.WebAPI.Controllers.Responses
+﻿namespace AntonS.WebAPI.Requests
 {
-    public class ArticleResponse
+    public class CreateOrUpdateArticleRequest
     {
-        public int Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public string FullText { get; set; }

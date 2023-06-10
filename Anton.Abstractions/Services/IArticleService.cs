@@ -20,6 +20,11 @@ namespace AntonS.Abstractions.Services
         Task AddRangeAsync(List<ArticleDTO> articles);
         Task RemoveById(int id);
         Task UpdateArticlesAsync(int id, List<PatchDTO> patchDtos);
+        Task<double?> Rate(ArticleDTO article);
+        Task<List<ArticleDTO>> GetUnratedArticles();
+        Task DeleteAll();
+        Task AddRating(double? rating, int id);
+        Task<List<ArticleDTO>> GetArticlesByPageAsync(int pageNumber, int pageSize);
 
     }
 }

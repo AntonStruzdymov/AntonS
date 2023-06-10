@@ -1,11 +1,22 @@
-﻿@{
+﻿@model ArticlesListModel
+
+<div class="row">
+    @foreach (var ar in Model.Articles)
+    {
+        await Html.RenderPartialAsync("ArticleShortPartialView", ar);
+    }
+</div>
+
+
+
+@*@{
     ViewData["Title"] = "Home Page";
 }
-
-<div class="text-center">
+*@
+@*<div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+</div>*@
 @*<style>
     body{
         background-image: url(https://i.pinimg.com/originals/3d/e2/c7/3de2c72e21721f457531242d77ef4d57.jpg);

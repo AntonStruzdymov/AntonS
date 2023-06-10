@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Runtime.CompilerServices;
 
 namespace AntonS.Controllers
@@ -44,13 +45,13 @@ namespace AntonS.Controllers
                     TotalItems = totalArticles
 
                 };
-                var articleDTOs = await articleService.GetAllArticlesAsync();
-                var articles = articleDTOs.Select(dto => mapper.Map<ArticlesListModel>(dto)).ToList();
+                var articleDTOs = await articleService.GetArticlesByPageAsync(page,pageSize);
+                var articles = articleDTOs.Select(dto => mapper.Map<ArticleShortModel>(dto)).ToList();
 
                 return View(new ArticlesListModel()
-                {
-                    Articles = articles,
-                    PageInfo = pageInfo
+                {                    
+                    pageInfo = pageInfo,
+                    Articles = articles
                 });
 
             }
@@ -92,7 +93,7 @@ namespace AntonS.Controllers
         { 
             string articleName = articlesListModel.Searched;
             var dtos = await articleService.GetArticlesByNameAsync(articleName);
-            var articles = dtos.Select(dto => mapper.Map<ArticlesListModel>(dto)).ToList();
+            var articles = dtos.Select(dto => mapper.Map<ArticleShortModel>(dto)).ToList();
             return View(new ArticlesListModel()
             {
                 Articles = articles
@@ -109,6 +110,7 @@ namespace AntonS.Controllers
             };
             return View(model);
         }
+        [Authorize(Roles ="Admin")]
         [HttpPost]
         public async Task<IActionResult> Create(ArticleCreateModel articleCreateModel)
         {
@@ -120,7 +122,7 @@ namespace AntonS.Controllers
                 SourceID = articleCreateModel.SourceID
             };
             var newArticleDTO = mapper.Map<ArticleDTO>(newArticle);
-            articleService.AddAsync(newArticleDTO);
+            await articleService.AddAsync(newArticleDTO);
             return RedirectToAction("Index");
         }
         [HttpPost]
@@ -135,5 +137,39 @@ namespace AntonS.Controllers
             await commentService.AddComment(commentDto);
             return RedirectToAction("ArticleDetailsWithComments", new {id = model._comment._articleID});            
         }
+        public async Task<IActionResult> Sort(ArticlesListModel model, int page=1)
+        {
+            var articles = await articleService.GetAllArticlesAsync();
+            if(int.TryParse(configuration["Pagination:Articles:DefaultPageSize"], out var pageSize))
+            {
+                var pageInfo = new PageInfo()
+                {
+                    PageSize = pageSize,
+                    PageNumber = page,
+                    TotalItems = articles.Count
+
+                };
+
+                if (model.SortBy == "By Descending")
+                {
+                    var sortedArticles = articles.OrderByDescending(a => a.PositivityRating).ToList();
+                    model.Articles = sortedArticles.Select(s => mapper.Map<ArticleShortModel>(s)).ToList();
+                }
+                else
+                {
+                    var sortedArticles = articles.OrderBy(a => a.PositivityRating).ToList();
+                    model.Articles = sortedArticles.Select(s => mapper.Map<ArticleShortModel>(s)).ToList();
+                }
+                return View("Index", new ArticlesListModel()
+                {
+                    Articles = model.Articles,
+                    pageInfo = pageInfo
+                });
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }        
     }
 }

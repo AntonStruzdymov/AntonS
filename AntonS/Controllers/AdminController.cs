@@ -2,6 +2,7 @@
 using AntonS.Core.DTOs;
 using AntonS.Models;
 using AutoMapper;
+using Hangfire;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,6 +16,7 @@ namespace AntonS.Controllers
         private readonly ICommentService _commentService;
         private readonly ISourceService _sourceService;
         private readonly IMapper _mapper;
+        
 
         public AdminController(IUSerService userService,
             IArticleService articleService,
@@ -28,11 +30,12 @@ namespace AntonS.Controllers
             _sourceService = sourceService;
             _mapper = mapper;
         }
+        
 
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            return View();
+            return View();            
         }
         [HttpGet]
         public async Task<IActionResult> GetNews()
@@ -47,6 +50,18 @@ namespace AntonS.Controllers
                 await _articleService.AddRangeAsync(articleFullContent);
             }
             return RedirectToAction("Index", "Article");
+        }
+        [HttpGet]
+        public async Task<IActionResult> RateArticles()
+        {
+            var unratedArticles = await _articleService.GetUnratedArticles();
+            foreach (var article in unratedArticles)
+            {
+               var articleRating = await _articleService.Rate(article);
+                await _articleService.AddRating(articleRating, article.Id);
+            }
+            return RedirectToAction("Index");
+            
         }
         [HttpPost]
         public async Task<IActionResult> ChangeEntity(AdminMainPageModel model)
@@ -120,17 +135,23 @@ namespace AntonS.Controllers
         public async Task<IActionResult> EditArticles()
         {
             var articlesDto = await _articleService.GetAllArticlesAsync();
-            var articles = articlesDto.Select(u => _mapper.Map<ArticlesListModel>(u)).ToList();
+            var articles = articlesDto.Select(u => _mapper.Map<ArticleShortModel>(u)).ToList();
             return View(new ArticlesListModel()
             {
                 Articles = articles
             });
         }
         [HttpGet]
-        public async Task<IActionResult> EditArticle(ArticlesListModel model)
+        public async Task<IActionResult> DeleteAllArticles()
+        {
+            await _articleService.DeleteAll();
+            return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public async Task<IActionResult> EditArticle(ArticleShortModel model)
         {
             var article = await _articleService.GetArticleByIdWithSourceNameAsync(model.Id);
-            var articleModel = _mapper.Map<ArticlesListModel>(article);
+            var articleModel = _mapper.Map<ArticleShortModel>(article);
             return View("ArticlePreview", new ChangeArticleModel()
             {
                 Id = article.Id,
@@ -169,12 +190,20 @@ namespace AntonS.Controllers
         public async Task<IActionResult> EditComments()
         {
             var articlesDto = await _articleService.GetAllArticlesAsync();
-            var articles = articlesDto.Select(u => _mapper.Map<ArticlesListModel>(u)).ToList();
+            var articles = articlesDto.Select(u => _mapper.Map<ArticleShortModel>(u)).ToList();
             return View(new ArticlesListModel()
             {
                 Articles = articles
             });
         }
+
+        private async Task<ArticleDTO> RateArticlesAsync (ArticleDTO article)
+        {
+            await _articleService.Rate(article);
+            return article;
+        }
+
+        
 
     }
 }

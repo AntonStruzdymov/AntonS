@@ -15,14 +15,11 @@ namespace AntonS.Helpers
         {
             _urlHelperFactory = urlHelperFactory;
         }
-
-        public PageInfo PageInfo { get; set; }
-        public string PageAction { get; set; }
-
         [ViewContext]
         [HtmlAttributeNotBound]
         public ViewContext ViewContext { get; set; }
-
+        public PageInfo PageInfo { get; set; }
+        public string PageAction { get; set; }
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {
@@ -31,7 +28,7 @@ namespace AntonS.Helpers
 
             result.AddCssClass("btn-group");
 
-            for (int i = 1; i <= PageInfo.TotalPages; i++)
+            for (int i = 1; i < PageInfo.TotalPages; i++)
             {
                 var tag = new TagBuilder("a");
                 var anchorInnerHtml = i.ToString();

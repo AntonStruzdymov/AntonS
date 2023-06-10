@@ -1,4 +1,4 @@
-﻿@model ArticlesListModel
+﻿    @model ArticlesListModel
 
 <h1>
     Pick article to edit
@@ -6,10 +6,13 @@
 <form asp-controller="Admin" asp-action="EditArticle" method="get">
     <select asp-for="Id" class="form-select">
         <option selected>Pick entity to work with</option>
-        @foreach (ArticlesListModel article in Model.Articles)
+        @foreach (var article in Model.Articles)
         {
                   <option value="@article.Id">@article.Title</option>
         }
     </select>
     <button class="btn btn-outline-secondary" type="submit" value="OK">Confirm</button>
+</form>
+<form asp-controller="Admin" asp-action="DeleteAllArticles" method="get">
+    <button class="btn btn-alert-danger" type="submit" value="Delete All">Delete All Articles</button>
 </form>

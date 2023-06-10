@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Anton.Abstractions\AntonS.Abstractions.csproj" />
+    <ProjectReference Include="..\AntonDB\AntonS.DB.csproj" />
   </ItemGroup>
 
 </Project>

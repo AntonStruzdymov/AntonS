@@ -5,7 +5,7 @@
 <form asp-controller="Admin" asp-action="EditArticle" method="get">
     <select asp-for="Id" class="form-select">
         <option selected>Pick entity to work with</option>
-        @foreach (ArticlesListModel article in Model.Articles)
+        @foreach (var article in Model.Articles)
         {
                       <option value="@article.Id">@article.Title</option>
         }

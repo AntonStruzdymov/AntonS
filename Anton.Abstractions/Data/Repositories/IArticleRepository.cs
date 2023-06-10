@@ -11,7 +11,10 @@ namespace AntonS.Abstractions.Data.Repositories
     public interface IArticleRepository : IRepository<Article>
     {
        Task<List<Article>> GetArticlesByName(string name);
-        
+       Task DeleteAllArticles();
+       Task<List<Article>> GetArticlesByPage(int pageNumber, int pageSize);
+
+
 
     }
 }

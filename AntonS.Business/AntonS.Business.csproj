@@ -9,6 +9,8 @@
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="HtmlAgilityPack" Version="1.11.46" />
+    <PackageReference Include="MediatR" Version="12.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="System.ServiceModel.Syndication" Version="7.0.0" />
   </ItemGroup>
 
@@ -16,7 +18,7 @@
     <ProjectReference Include="..\Anton.Abstractions\AntonS.Abstractions.csproj" />
     <ProjectReference Include="..\AntonDB\AntonS.DB.csproj" />
     <ProjectReference Include="..\AntonS.Core\AntonS.Core.csproj" />
-    <ProjectReference Include="..\AntonS.Repositories\AntonS.Repositories.csproj" />
+    <ProjectReference Include="..\AntonS.DB.CQS\AntonS.DB.CQS.csproj" />
   </ItemGroup>
 
 </Project>

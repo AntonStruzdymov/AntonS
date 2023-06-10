@@ -11,6 +11,7 @@ namespace AntonDB
         public DbSet<Source> Sources { get;set; }
         public DbSet<User> Users { get;set; }
         public DbSet<AccessLevel> AccessLevels { get;set; }
+        public DbSet<RefreshToken> RefreshTokens { get;set; }
 
         public AntonDBContext(DbContextOptions<AntonDBContext> options) : base(options)
         {

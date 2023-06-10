@@ -1,4 +1,4 @@
-﻿namespace AntonS.WebAPI.Controllers.Responses
+﻿namespace AntonS.WebAPI.Responses
 {
     public class ErrorResponse
     {

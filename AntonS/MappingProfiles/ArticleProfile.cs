@@ -11,7 +11,7 @@ namespace AntonS.MappingProfiles
         {
             CreateMap<Article, ArticleDTO>();
             CreateMap<ArticleDTO, Article>();
-            CreateMap<ArticleDTO, ArticlesListModel>();
+            CreateMap<ArticleDTO, ArticleShortModel>();
             CreateMap<ArticleDTO, ArticlePreviewModel>();
         }
     }

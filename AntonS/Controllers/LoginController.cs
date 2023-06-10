@@ -27,7 +27,7 @@ namespace AntonS.Controllers
         [HttpGet]
         public async Task<IActionResult> OpenLoginPage()
         {
-            return View();
+           return View();
         }
         [HttpGet]
         public async Task<IActionResult> Login()
@@ -86,16 +86,8 @@ namespace AntonS.Controllers
         {
             
                 const string authType = "Application Cookie";
-                var claims = new List<Claim>
-                {
-                    new Claim(ClaimsIdentity.DefaultNameClaimType, dto.Email),
-                };
-                var acessLevel = await _levelService.GetRoleName(dto.Id);
-                if (string.IsNullOrEmpty(acessLevel))
-                {
-                    throw new ArgumentException("Incorrect user or role", nameof(dto));
-                }
-                claims.Add(new Claim(ClaimsIdentity.DefaultRoleClaimType, acessLevel));
+
+            var claims = await _userService.GetUserClaimsAsync(dto);
 
                 var identity = new ClaimsIdentity(claims,
                     authType,

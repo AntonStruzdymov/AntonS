@@ -1,27 +1,33 @@
 ﻿@model ArticlesListModel
+@addTagHelper *, AntonS
 
 <form action="/Article/SearchedArticlesList"  method=Post class="form-text col-6 "  >
     @Html.TextBoxFor(model=>model.Searched)
     <input type="submit" value="Submit"/>
-    <a class="btn bg-primary col-6"   asp-action="Create" asp-controller="Article" >Create</a>    
-</form>  
+    @if(Context.User.Claims.Any() && Context.User.Identity.Name.Equals("Struzdymov@mail.ru"))
+    {
+        <a class="btn bg-primary col-6"   asp-action="Create" asp-controller="Article" >Create</a>
+    }        
+</form> 
+<form class="dropdown" asp-action="Sort" asp-controller="Article" method="get">    
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Sort by...
+  </button>
+  <ul class="dropdown-menu">
+    <li><input asp-for="SortBy" class="dropdown-item" type="submit" placeholder="1" value="By Descending"/></li>
+    <li><input asp-for="SortBy" class="dropdown-item" type="submit" placeholder="2" value="By Ascending"/></li>    
+  </ul>
+</form>
 
-<div>
+
+<div class="row">
     @foreach (var ar in Model.Articles)
     {
-            <div>
-                <b>@ar.Id</b> - @ar.Title
-            </div>
-            <div>
-                <p>@Html.Raw(ar.Description)</p>
-            </div> 
-            <div>                    
-                    <a href="@Url.Action("ArticleDetailsWithComments", "Article", new {id = ar.Id})" class="btn btn-secondary" role="button"  >Read more...</a>
-            </div>
-            <hr/>
+        await Html.RenderPartialAsync("ArticleShortPartialView", ar);
     }
 </div>
 
+<pagination page-info="Model.pageInfo" page-action="Index">
 
-
+</pagination>
     

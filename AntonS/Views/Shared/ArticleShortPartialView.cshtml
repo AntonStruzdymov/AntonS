@@ -1,0 +1,19 @@
+﻿@model ArticleShortModel
+
+<div class="col-5" id="article">
+    @Model.PositivityRating <h6>@Model.Title</h6>
+    @Html.Raw(Model.Description)
+    <form method="get">
+        <input type="hidden" asp-for="Id" value="@Model.Id" />
+        <button asp-controller="Article" asp-action="ArticleDetailsWithComments">Read more...</button>        
+    </form>
+</div>
+<style>
+    #article{
+        position:relative;
+        border:solid;
+        border-color: red;
+        margin: 5px;
+        background-color: gainsboro;
+    }
+</style>

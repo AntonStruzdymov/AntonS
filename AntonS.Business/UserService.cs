@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,12 +20,14 @@ namespace AntonS.Business
         private readonly IUnitOfWork _unitOfWork;
         private readonly IConfiguration _configuration;
         private readonly IMapper _mapper;
+        private readonly IAcessLevelService _levelService;
         
-        public UserService (IUnitOfWork unitOfWork, IMapper mapper, IConfiguration configuration)
+        public UserService (IUnitOfWork unitOfWork, IMapper mapper, IConfiguration configuration, IAcessLevelService levelService)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
             _configuration = configuration;
+            _levelService = levelService;
             
         }
 
@@ -98,6 +101,20 @@ namespace AntonS.Business
         {
             await _unitOfWork.User.PatchAsync(id, patchDtos);
             await _unitOfWork.SaveChangesAsync();
+        }
+        public async Task<List<Claim>> GetUserClaimsAsync(UserDTO user)
+        {
+            var claims = new List<Claim>
+                {
+                    new Claim(ClaimsIdentity.DefaultNameClaimType, user.Email),
+                };
+            var acessLevel = await _levelService.GetRoleName(user.Id);
+            if (string.IsNullOrEmpty(acessLevel))
+            {
+                throw new ArgumentException("Incorrect user or role", nameof(user));
+            }
+            claims.Add(new Claim(ClaimsIdentity.DefaultRoleClaimType, acessLevel));
+            return claims;
         }
 
         private string GetPasswordHash(string password)

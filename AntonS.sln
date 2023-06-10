@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntonS.Core", "AntonS.Core\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntonS.Repositories", "AntonS.Repositories\AntonS.Repositories.csproj", "{CDAE450B-D817-4F09-A1E7-47236F2C5532}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntonS.WebAPI", "AntonS.WebAPI\AntonS.WebAPI.csproj", "{264E03E5-A72B-4ED1-A571-5910361F2AEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntonS.WebAPI", "AntonS.WebAPI\AntonS.WebAPI.csproj", "{264E03E5-A72B-4ED1-A571-5910361F2AEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntonS.DB.CQS", "AntonS.DB.CQS\AntonS.DB.CQS.csproj", "{9950D0B4-173F-4023-8161-AE5063F7860D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{264E03E5-A72B-4ED1-A571-5910361F2AEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{264E03E5-A72B-4ED1-A571-5910361F2AEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{264E03E5-A72B-4ED1-A571-5910361F2AEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9950D0B4-173F-4023-8161-AE5063F7860D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9950D0B4-173F-4023-8161-AE5063F7860D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9950D0B4-173F-4023-8161-AE5063F7860D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9950D0B4-173F-4023-8161-AE5063F7860D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

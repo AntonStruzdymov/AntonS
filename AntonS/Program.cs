@@ -10,6 +10,8 @@ using AntonS.Repositories.Implementation;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Hangfire;
+using AntonS.Controllers;
 
 namespace AntonS
 {
@@ -43,6 +45,9 @@ namespace AntonS
             builder.Services.AddTransient<IAcessLevelService, AccessLevelService>();
 
             builder.Services.AddAutoMapper(typeof(Program));
+            builder.Services.AddHangfire(x=> x.UseSqlServerStorage(builder.Configuration
+                        .GetConnectionString("DefaultConnection")));
+            builder.Services.AddHangfireServer();
             
             builder.Services.AddControllersWithViews();
 
@@ -73,11 +78,16 @@ namespace AntonS
             app.UseAuthentication();
             app.UseAuthorization();
 
+            app.UseHangfireDashboard();
+            RecurringJob.AddOrUpdate<AdminController>("get news", a => a.GetNews(), Cron.Daily(16));
+            RecurringJob.AddOrUpdate<AdminController>("rate news", a => a.RateArticles(), Cron.Daily(16));
+            
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
             app.Run();
+            
             
         }
     }

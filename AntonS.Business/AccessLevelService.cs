@@ -53,7 +53,7 @@ namespace AntonS.Business
             }
             if (defaultRole)
             {
-                _unitOfWork.SaveChangesAsync();
+                await _unitOfWork.SaveChangesAsync();
             }
         }
     }

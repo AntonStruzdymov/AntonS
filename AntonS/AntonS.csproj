@@ -9,14 +9,19 @@
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.4" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="7.0.4" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.4">
+    <PackageReference Include="Hangfire" Version="1.8.2" />
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.8.2" />
+    <PackageReference Include="Hangfire.Core" Version="1.8.2" />
+    <PackageReference Include="Hangfire.SqlServer" Version="1.8.2" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.4" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.4">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
@@ -27,6 +32,7 @@
     <ProjectReference Include="..\Anton.Abstractions\AntonS.Abstractions.csproj" />
     <ProjectReference Include="..\AntonDB\AntonS.DB.csproj" />
     <ProjectReference Include="..\AntonS.Business\AntonS.Business.csproj" />
+    <ProjectReference Include="..\AntonS.Core\AntonS.Core.csproj" />
     <ProjectReference Include="..\AntonS.Repositories\AntonS.Repositories.csproj" />
   </ItemGroup>
 
