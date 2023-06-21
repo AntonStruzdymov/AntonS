@@ -5,6 +5,7 @@ using AutoMapper;
 using Hangfire;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 
 namespace AntonS.Controllers
 {
@@ -17,6 +18,8 @@ namespace AntonS.Controllers
         private readonly ISourceService _sourceService;
         private readonly IMapper _mapper;
         
+        
+
 
         public AdminController(IUSerService userService,
             IArticleService articleService,
@@ -28,7 +31,7 @@ namespace AntonS.Controllers
             _articleService = articleService;
             _commentService = commentService;
             _sourceService = sourceService;
-            _mapper = mapper;
+            _mapper = mapper;            
         }
         
 
@@ -39,15 +42,23 @@ namespace AntonS.Controllers
         }
         [HttpGet]
         public async Task<IActionResult> GetNews()
-        {
-            var sources = (await _sourceService.GetSourcesAsync())
+        {            
+            try
+            {
+                var sources = (await _sourceService.GetSourcesAsync())
                 .Where(s => !string.IsNullOrEmpty(s.SourceRssURl))
                 .ToArray();
-            foreach (var source in sources)
+                foreach (var source in sources)
+                {
+                    var articleFromRss = (await _articleService.GetArticlesFromRssSourceAsync(source, CancellationToken.None));
+                    var articleFullContent = await _articleService.GetFullArticleContentAsync(articleFromRss);
+                    await _articleService.AddRangeAsync(articleFullContent);
+                }
+            }
+            catch(Exception ex)
             {
-                var articleFromRss = (await _articleService.GetArticlesFromRssSourceAsync(source, CancellationToken.None));
-                var articleFullContent = await _articleService.GetFullArticleContentAsync(articleFromRss);
-                await _articleService.AddRangeAsync(articleFullContent);
+                Log.Error(ex, ex.Message);
+                return NotFound();
             }
             return RedirectToAction("Index", "Article");
         }
@@ -151,7 +162,6 @@ namespace AntonS.Controllers
         public async Task<IActionResult> EditArticle(ArticleShortModel model)
         {
             var article = await _articleService.GetArticleByIdWithSourceNameAsync(model.Id);
-            var articleModel = _mapper.Map<ArticleShortModel>(article);
             return View("ArticlePreview", new ChangeArticleModel()
             {
                 Id = article.Id,
@@ -195,15 +205,7 @@ namespace AntonS.Controllers
             {
                 Articles = articles
             });
-        }
-
-        private async Task<ArticleDTO> RateArticlesAsync (ArticleDTO article)
-        {
-            await _articleService.Rate(article);
-            return article;
-        }
-
-        
+        }       
 
     }
 }

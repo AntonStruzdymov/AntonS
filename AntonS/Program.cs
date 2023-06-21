@@ -12,6 +12,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Hangfire;
 using AntonS.Controllers;
+using HangfireBasicAuthenticationFilter;
+using Microsoft.Extensions.Configuration;
+using Serilog;
+using Serilog.Events;
+
 
 namespace AntonS
 {
@@ -20,6 +25,14 @@ namespace AntonS
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            Log.Logger = new LoggerConfiguration()
+                .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
+                .Enrich.FromLogContext()
+                .MinimumLevel.Debug()
+                .WriteTo.File(@"C:\\Users\\Asus\\Desktop\\Антон\\Project\\AntonS\\Logs.txt", LogEventLevel.Information)
+                .CreateLogger();
+
 
             builder.Services.AddDbContext<AntonDBContext>(
                 opt =>
@@ -43,6 +56,9 @@ namespace AntonS
             builder.Services.AddTransient<ICommentService, CommentService>();
             builder.Services.AddTransient<IUSerService, UserService>();
             builder.Services.AddTransient<IAcessLevelService, AccessLevelService>();
+
+            
+            
 
             builder.Services.AddAutoMapper(typeof(Program));
             builder.Services.AddHangfire(x=> x.UseSqlServerStorage(builder.Configuration
@@ -71,14 +87,25 @@ namespace AntonS
             }
 
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
+            app.UseStaticFiles();            
 
             app.UseRouting();
 
             app.UseAuthentication();
             app.UseAuthorization();
 
-            app.UseHangfireDashboard();
+            app.UseHangfireDashboard("/hangfire",new DashboardOptions
+            {
+                DashboardTitle = "AntonS.App",
+                Authorization = new[]
+                {
+                    new HangfireCustomBasicAuthenticationFilter
+                    {
+                        User = builder.Configuration.GetSection("HangfireSettings:UserName").Value,
+                        Pass = builder.Configuration.GetSection("HangfireSettings:Password").Value
+                    }
+                }
+            });
             RecurringJob.AddOrUpdate<AdminController>("get news", a => a.GetNews(), Cron.Daily(16));
             RecurringJob.AddOrUpdate<AdminController>("rate news", a => a.RateArticles(), Cron.Daily(16));
             

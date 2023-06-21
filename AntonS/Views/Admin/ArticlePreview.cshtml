@@ -15,7 +15,7 @@
         <input type="text" asp-for="Description" placeholder="Введите новое краткое описание" />
     </p>
     <p>
-        <input type="text" asp-for="FullText" placeholder="Исправленный текст" height="100 px"/>
+        <input type="text" asp-for="FullText" value="@Html.Raw(Model.FullText)" placeholder="Исправленный текст" height="100 px"/>
     </p>
     <p>
         <input type="number" asp-for="PositivityRating" placeholder="Введите рейтинг"/>
@@ -29,7 +29,7 @@
 <form asp-controller="Admin" asp-action="ChangeArticle" method="post"  >
     <input type="hidden" asp-for="DeleteArticle" value="true"/>
     <input type="hidden" asp-for="Id" value="@Model.Id" />
-    <button class="btn btn-primary" type="submit" >Delete User</button>
+    <button class="btn btn-primary" type="submit" >Delete Article</button>
 </form>
 
 

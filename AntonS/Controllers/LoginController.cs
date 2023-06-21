@@ -6,23 +6,18 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
-
+using Serilog;
 
 namespace AntonS.Controllers
 {
     public class LoginController : Controller
     {
         private readonly IUSerService _userService;
-        private readonly IConfiguration _configuration;
-        private readonly IAcessLevelService _levelService;
-        private readonly IMapper _mapper;
-
-        public LoginController(IUSerService userService, IConfiguration configuration, IMapper mapper, IAcessLevelService levelService)
+        
+        public LoginController(IUSerService userService)
         {
-            _userService = userService;
-            _configuration = configuration;
-            _mapper = mapper;
-            _levelService = levelService;
+            _userService = userService;            
+            
         }
         [HttpGet]
         public async Task<IActionResult> OpenLoginPage()
@@ -37,14 +32,21 @@ namespace AntonS.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginPageModel model) 
         {
-            var isexists = await _userService.IsUserExistsAsync(model.UserName);
-            var isexists2 = await _userService.IsPasswordCorrectAsync(model.UserName, model.Password);
-            if (isexists && isexists2)
+            try
             {
-                var user = await _userService.GetByEmailAsync(model.UserName);
-                await AuthenticateAsync(user);
-                return RedirectToAction("Index","Home");
+                var isexists = await _userService.IsUserExistsAsync(model.UserName);
+                var isexists2 = await _userService.IsPasswordCorrectAsync(model.UserName, model.Password);
+                if (isexists && isexists2)
+                {
+                    var user = await _userService.GetByEmailAsync(model.UserName);
+                    await AuthenticateAsync(user);
+                    return RedirectToAction("Index", "Home");
 
+                }
+            }
+            catch(Exception ex)
+            {
+                Log.Error(ex, ex.Message);
             }
             return RedirectToAction("Index", "Home");
         }
@@ -62,20 +64,27 @@ namespace AntonS.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterPageModel model)
         {
-            if(ModelState.IsValid) 
+            try
             {
-                if (!await _userService.IsUserExistsAsync(model.Email))
+                if (ModelState.IsValid)
                 {
-                    var user = await _userService.AddUserAsync(model.Name, model.Surname, model.Email, model.Password);
-                    if (user != null)
+                    if (!await _userService.IsUserExistsAsync(model.Email))
                     {
-                        await AuthenticateAsync(user);
-                        return RedirectToAction("Index", "Home");
+                        var user = await _userService.AddUserAsync(model.Name, model.Surname, model.Email, model.Password);
+                        if (user != null)
+                        {
+                            await AuthenticateAsync(user);
+                            return RedirectToAction("Index", "Home");
+                        }
+                        ModelState.AddModelError("", "");
                     }
-                    ModelState.AddModelError("","");
+                    return RedirectToAction("Index", "Home");
                 }
-                return RedirectToAction("Index", "Home");
-            }            
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, ex.Message);
+            }
             return View(model);
         }
         public async Task<IActionResult> IsEmailAlreadyUsed(string email)

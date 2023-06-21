@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntonS.Repositories", "Anto
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntonS.WebAPI", "AntonS.WebAPI\AntonS.WebAPI.csproj", "{264E03E5-A72B-4ED1-A571-5910361F2AEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntonS.DB.CQS", "AntonS.DB.CQS\AntonS.DB.CQS.csproj", "{9950D0B4-173F-4023-8161-AE5063F7860D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntonS.DB.CQS", "AntonS.DB.CQS\AntonS.DB.CQS.csproj", "{9950D0B4-173F-4023-8161-AE5063F7860D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

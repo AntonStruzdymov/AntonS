@@ -4,8 +4,8 @@
     This is an ADMIN only page!
 </h1>
 
-<a class="btn btn-danger" asp-area="" asp-controller="Admin" asp-action="GetNews">GetNews</a>
-<a class="btn-secondary" asp-controller="Admin" asp-action="RateArticles">Rate Articles</a>
+<a class="btn btn-secondary" asp-area="" asp-controller="Admin" asp-action="GetNews">GetNews</a>
+<a class="btn btn-secondary" asp-controller="Admin" asp-action="RateArticles">Rate Articles</a>
 
 <form asp-controller="Admin" asp-action="ChangeEntity" method="post">
     <select asp-for="EntityName" class="form-select">
@@ -14,5 +14,48 @@
         <option value="Article">Articles</option>
         <option value="Comment">Comments</option>
     </select>
-    <button class="btn btn-outline-secondary" type="submit" value="OK">Confirm</button>
+    <button class="btn btn-secondary" type="submit" value="OK">Confirm</button>
 </form>
+
+<style>
+    body{
+        background: linear-gradient(#B7C1E1,#041858);
+    }
+    h1{
+        position:relative;
+        left: 30%;
+        color: darkred;
+        font-family:'Poor Richard';
+    }
+    .btn-secondary{
+        background-color: #041858;
+        color: greenyellow;
+        position:relative;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .btn-secondary:focus {
+        transform:rotateX('45');
+    }
+    .form-select{
+        background-color: greenyellow;
+        color: #041858;
+        border:hidden;
+        position:relative;
+        width: 500px;
+        font: bold;
+    }
+    form{
+        position:relative;
+        top: 150px;
+        left: 35%;
+    }
+    btn.btn-outline-secondary{
+            background-color: #041858;
+            color: greenyellow;
+            position: relative;
+            padding: 5px;
+            margin: 10px;
+    }
+</style>

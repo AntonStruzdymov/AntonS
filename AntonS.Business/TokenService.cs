@@ -6,6 +6,7 @@ using AntonS.DB.CQS.Queries;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -40,6 +41,26 @@ namespace AntonS.Business
                 UserId= userId,
                 RefreshToken= refreshToken
             });
+        }
+        public async Task<TokenDTO> RefreshTokenAsync(Guid refreshToken)
+        {
+            var user = await _mediator.Send(new GetUserByRefreshTokenQuery()
+            {
+                RefreshToken = refreshToken 
+            });
+            if(user != null)
+            {
+                var token = await GenerateJwtTokenAsync(user);
+                await _mediator.Send(new RemoveRefreshTokenCommand() { RefreshToken = refreshToken });
+                var newToken = Guid.NewGuid();
+                await _mediator.Send(new AddRefreshTokenCommand { RefreshToken = newToken });
+                return (new TokenDTO()
+                {
+                    Token = token,
+                    RefreshToken = newToken.ToString("D")
+                });
+            }
+            throw new ArgumentException("RT not connected with User", nameof(refreshToken));
         }
         private async Task<string> GenerateJwtTokenAsync(UserDTO dto)
         {

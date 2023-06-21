@@ -153,12 +153,16 @@ namespace AntonS.Controllers
                 if (model.SortBy == "By Descending")
                 {
                     var sortedArticles = articles.OrderByDescending(a => a.PositivityRating).ToList();
-                    model.Articles = sortedArticles.Select(s => mapper.Map<ArticleShortModel>(s)).ToList();
+                    model.Articles = sortedArticles.Select(s => mapper.Map<ArticleShortModel>(s))
+                        .Skip(pageSize*page)
+                        .Take(pageSize).ToList();
                 }
                 else
                 {
                     var sortedArticles = articles.OrderBy(a => a.PositivityRating).ToList();
-                    model.Articles = sortedArticles.Select(s => mapper.Map<ArticleShortModel>(s)).ToList();
+                    model.Articles = sortedArticles.Select(s => mapper.Map<ArticleShortModel>(s))
+                        .Skip(pageSize*page)
+                        .Take(pageSize).ToList();
                 }
                 return View("Index", new ArticlesListModel()
                 {

@@ -1,0 +1,1162 @@
+2023-06-11 15:21:56.695 +03:00 [INF] Start installing Hangfire SQL objects...
+2023-06-11 15:21:58.278 +03:00 [INF] Hangfire SQL objects installed.
+2023-06-11 15:21:59.430 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-F0SLSJ8@AntonSDB'
+2023-06-11 15:21:59.430 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-06-11 15:21:59.430 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-11 15:21:59.456 +03:00 [DBG] Execution loop BackgroundServerProcess:59a2f8e9 has started in 13,4257 ms
+2023-06-11 15:21:59.534 +03:00 [INF] Server desktop-f0slsj8:14948:c5df2c4a successfully announced in 69,2072 ms
+2023-06-11 15:21:59.543 +03:00 [DBG] Execution loop ServerHeartbeatProcess:2f9ac334 has started in 7,1783 ms
+2023-06-11 15:21:59.544 +03:00 [INF] Server desktop-f0slsj8:14948:c5df2c4a is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-11 15:21:59.552 +03:00 [DBG] Execution loop ServerWatchdog:892c7c7f has started in 7,2829 ms
+2023-06-11 15:21:59.556 +03:00 [DBG] Execution loop ServerJobCancellationWatcher:cb78672c has started in 9,4606 ms
+2023-06-11 15:21:59.561 +03:00 [DBG] Execution loop ExpirationManager:6f69c17a has started in 5,4294 ms
+2023-06-11 15:21:59.564 +03:00 [DBG] Execution loop CountersAggregator:9cb24237 has started in 8,1282 ms
+2023-06-11 15:21:59.569 +03:00 [DBG] Execution loop SqlServerHeartbeatProcess:7e196174 has started in 9,1528 ms
+2023-06-11 15:21:59.570 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 15:21:59.571 +03:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2023-06-11 15:21:59.577 +03:00 [DBG] Execution loop Worker:153b2a9d has started in 12,8589 ms
+2023-06-11 15:21:59.580 +03:00 [DBG] Execution loop Worker:cb033c24 has started in 15,796 ms
+2023-06-11 15:21:59.585 +03:00 [DBG] Execution loop Worker:0eb7634d has started in 20,1216 ms
+2023-06-11 15:21:59.588 +03:00 [INF] 1 servers were removed due to timeout
+2023-06-11 15:21:59.588 +03:00 [DBG] Execution loop Worker:7c71de2c has started in 23,7552 ms
+2023-06-11 15:21:59.593 +03:00 [DBG] Execution loop Worker:42fe653c has started in 28,5483 ms
+2023-06-11 15:21:59.597 +03:00 [DBG] Execution loop Worker:1e20fa61 has started in 32,6683 ms
+2023-06-11 15:21:59.603 +03:00 [DBG] Execution loop Worker:4854cb1b has started in 38,6649 ms
+2023-06-11 15:21:59.606 +03:00 [DBG] Execution loop Worker:ae321960 has started in 41,9847 ms
+2023-06-11 15:21:59.611 +03:00 [DBG] Execution loop Worker:f8b96051 has started in 47,0273 ms
+2023-06-11 15:21:59.616 +03:00 [DBG] Execution loop Worker:8023c4e1 has started in 51,4483 ms
+2023-06-11 15:21:59.621 +03:00 [DBG] Execution loop Worker:40c0868e has started in 56,6095 ms
+2023-06-11 15:21:59.626 +03:00 [DBG] Execution loop Worker:2c84d650 has started in 61,1766 ms
+2023-06-11 15:21:59.631 +03:00 [DBG] Execution loop Worker:259b50b6 has started in 66,6627 ms
+2023-06-11 15:21:59.638 +03:00 [DBG] Execution loop Worker:cf57c483 has started in 72,1996 ms
+2023-06-11 15:21:59.638 +03:00 [DBG] Removing outdated records from the 'Job' table...
+2023-06-11 15:21:59.641 +03:00 [DBG] Execution loop Worker:79d259d9 has started in 76,4642 ms
+2023-06-11 15:21:59.645 +03:00 [DBG] Execution loop Worker:01902cad has started in 80,2426 ms
+2023-06-11 15:21:59.649 +03:00 [DBG] Execution loop Worker:7521a6c7 has started in 84,9827 ms
+2023-06-11 15:21:59.655 +03:00 [DBG] Execution loop Worker:4c438cc2 has started in 89,8366 ms
+2023-06-11 15:21:59.658 +03:00 [DBG] Execution loop Worker:bd8ad3a8 has started in 93,1638 ms
+2023-06-11 15:21:59.662 +03:00 [DBG] Execution loop Worker:42fa3d38 has started in 97,4837 ms
+2023-06-11 15:21:59.666 +03:00 [INF] Server desktop-f0slsj8:14948:c5df2c4a all the dispatchers started
+2023-06-11 15:21:59.666 +03:00 [DBG] Execution loop DelayedJobScheduler:5e2ed9e3 has started in 8,8819 ms
+2023-06-11 15:21:59.672 +03:00 [DBG] Execution loop RecurringJobScheduler:98e4a5f9 has started in 10,3047 ms
+2023-06-11 15:21:59.675 +03:00 [DBG] Removing outdated records from the 'List' table...
+2023-06-11 15:21:59.700 +03:00 [DBG] Removing outdated records from the 'Set' table...
+2023-06-11 15:21:59.713 +03:00 [DBG] Removing outdated records from the 'Hash' table...
+2023-06-11 15:22:28.094 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-11 15:22:28.097 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-11 15:22:29.595 +03:00 [DBG] Server desktop-f0slsj8:14948:c5df2c4a heartbeat successfully sent
+2023-06-11 15:22:32.292 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-11 15:22:32.292 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-11 15:24:59.347 +03:00 [INF] Start installing Hangfire SQL objects...
+2023-06-11 15:25:00.688 +03:00 [INF] Hangfire SQL objects installed.
+2023-06-11 15:25:01.577 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-F0SLSJ8@AntonSDB'
+2023-06-11 15:25:01.577 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-06-11 15:25:01.577 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-11 15:25:01.599 +03:00 [DBG] Execution loop BackgroundServerProcess:8b0174fd has started in 9,7103 ms
+2023-06-11 15:25:01.914 +03:00 [INF] Server desktop-f0slsj8:13796:b94b1d50 successfully announced in 308,1998 ms
+2023-06-11 15:25:01.921 +03:00 [DBG] Execution loop ServerHeartbeatProcess:d8383524 has started in 6,5902 ms
+2023-06-11 15:25:01.922 +03:00 [INF] Server desktop-f0slsj8:13796:b94b1d50 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-11 15:25:01.926 +03:00 [DBG] Execution loop ServerWatchdog:486c5a88 has started in 4,5307 ms
+2023-06-11 15:25:01.931 +03:00 [DBG] Execution loop ServerJobCancellationWatcher:13db7693 has started in 8,0672 ms
+2023-06-11 15:25:01.937 +03:00 [DBG] Execution loop ExpirationManager:2fcb75db has started in 6,1913 ms
+2023-06-11 15:25:01.940 +03:00 [DBG] Execution loop CountersAggregator:9dfac5eb has started in 8,4997 ms
+2023-06-11 15:25:01.942 +03:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2023-06-11 15:25:01.943 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 15:25:01.948 +03:00 [DBG] Execution loop SqlServerHeartbeatProcess:aab36734 has started in 12,3391 ms
+2023-06-11 15:25:01.954 +03:00 [DBG] Execution loop Worker:644a0a1a has started in 10,0519 ms
+2023-06-11 15:25:01.959 +03:00 [DBG] Execution loop Worker:deda2c51 has started in 14,9854 ms
+2023-06-11 15:25:01.963 +03:00 [DBG] Execution loop Worker:fc9e86b4 has started in 19,5912 ms
+2023-06-11 15:25:01.967 +03:00 [DBG] Execution loop Worker:c7463c5f has started in 23,3772 ms
+2023-06-11 15:25:01.971 +03:00 [DBG] Execution loop Worker:6e8dd393 has started in 27,105 ms
+2023-06-11 15:25:01.977 +03:00 [DBG] Execution loop Worker:31fb6f0c has started in 32,6823 ms
+2023-06-11 15:25:01.981 +03:00 [DBG] Execution loop Worker:075ea613 has started in 37,0123 ms
+2023-06-11 15:25:01.987 +03:00 [DBG] Execution loop Worker:c1af31a4 has started in 42,7962 ms
+2023-06-11 15:25:01.991 +03:00 [DBG] Execution loop Worker:d5f0bcbe has started in 45,9331 ms
+2023-06-11 15:25:01.994 +03:00 [DBG] Execution loop Worker:5d2e797c has started in 50,2686 ms
+2023-06-11 15:25:02.000 +03:00 [DBG] Execution loop Worker:9d7fe8c4 has started in 55,3577 ms
+2023-06-11 15:25:02.003 +03:00 [DBG] Execution loop Worker:c269918e has started in 58,4996 ms
+2023-06-11 15:25:02.007 +03:00 [DBG] Removing outdated records from the 'Job' table...
+2023-06-11 15:25:02.007 +03:00 [DBG] Execution loop Worker:e0d11902 has started in 63,2386 ms
+2023-06-11 15:25:02.011 +03:00 [DBG] Execution loop Worker:8a152d57 has started in 67,2723 ms
+2023-06-11 15:25:02.016 +03:00 [DBG] Execution loop Worker:28d8f1bc has started in 72,5313 ms
+2023-06-11 15:25:02.021 +03:00 [DBG] Execution loop Worker:8cd944e0 has started in 77,0925 ms
+2023-06-11 15:25:02.021 +03:00 [DBG] Execution loop Worker:66c28fe6 has started in 77,0826 ms
+2023-06-11 15:25:02.026 +03:00 [DBG] Execution loop Worker:6664d66f has started in 81,9208 ms
+2023-06-11 15:25:02.029 +03:00 [DBG] Execution loop Worker:e851cfa2 has started in 85,4677 ms
+2023-06-11 15:25:02.034 +03:00 [DBG] Execution loop Worker:04d46e87 has started in 90,1295 ms
+2023-06-11 15:25:02.038 +03:00 [INF] Server desktop-f0slsj8:13796:b94b1d50 all the dispatchers started
+2023-06-11 15:25:02.038 +03:00 [DBG] Execution loop DelayedJobScheduler:9bc18a5e has started in 8,7087 ms
+2023-06-11 15:25:02.042 +03:00 [DBG] Execution loop RecurringJobScheduler:34467be3 has started in 8,3727 ms
+2023-06-11 15:25:02.064 +03:00 [DBG] Removing outdated records from the 'List' table...
+2023-06-11 15:25:02.066 +03:00 [DBG] Removing outdated records from the 'Set' table...
+2023-06-11 15:25:02.068 +03:00 [DBG] Removing outdated records from the 'Hash' table...
+2023-06-11 15:25:31.968 +03:00 [DBG] Server desktop-f0slsj8:13796:b94b1d50 heartbeat successfully sent
+2023-06-11 15:26:33.229 +03:00 [INF] Start installing Hangfire SQL objects...
+2023-06-11 15:26:34.052 +03:00 [INF] Hangfire SQL objects installed.
+2023-06-11 15:26:34.832 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-F0SLSJ8@AntonSDB'
+2023-06-11 15:26:34.832 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-06-11 15:26:34.833 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-11 15:26:34.858 +03:00 [DBG] Execution loop BackgroundServerProcess:7510599b has started in 16,7574 ms
+2023-06-11 15:26:34.899 +03:00 [INF] Server desktop-f0slsj8:952:66186123 successfully announced in 22,6698 ms
+2023-06-11 15:26:34.906 +03:00 [DBG] Execution loop ServerHeartbeatProcess:80c184c0 has started in 6,7822 ms
+2023-06-11 15:26:34.907 +03:00 [INF] Server desktop-f0slsj8:952:66186123 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-11 15:26:34.914 +03:00 [DBG] Execution loop ServerWatchdog:cc4e1858 has started in 6,6221 ms
+2023-06-11 15:26:34.918 +03:00 [DBG] Execution loop ServerJobCancellationWatcher:81ee14cf has started in 9,5764 ms
+2023-06-11 15:26:34.924 +03:00 [DBG] Execution loop ExpirationManager:55f23f58 has started in 5,959 ms
+2023-06-11 15:26:34.932 +03:00 [DBG] Execution loop CountersAggregator:b90b9924 has started in 13,2418 ms
+2023-06-11 15:26:34.935 +03:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2023-06-11 15:26:34.935 +03:00 [DBG] Execution loop SqlServerHeartbeatProcess:725125bb has started in 11,7986 ms
+2023-06-11 15:26:34.936 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 15:26:34.944 +03:00 [DBG] Execution loop Worker:203edf29 has started in 12,8182 ms
+2023-06-11 15:26:34.944 +03:00 [DBG] Execution loop Worker:f0c54034 has started in 12,8344 ms
+2023-06-11 15:26:34.947 +03:00 [DBG] Execution loop Worker:1a3756ce has started in 15,525 ms
+2023-06-11 15:26:34.953 +03:00 [DBG] Execution loop Worker:bc43012d has started in 21,2006 ms
+2023-06-11 15:26:34.958 +03:00 [DBG] Execution loop Worker:1e4f0686 has started in 26,3377 ms
+2023-06-11 15:26:34.961 +03:00 [DBG] Execution loop Worker:d047870d has started in 29,3685 ms
+2023-06-11 15:26:34.966 +03:00 [DBG] Execution loop Worker:fc4ac509 has started in 34,4479 ms
+2023-06-11 15:26:34.970 +03:00 [DBG] Execution loop Worker:940d98a4 has started in 37,9924 ms
+2023-06-11 15:26:34.974 +03:00 [DBG] Execution loop Worker:db533651 has started in 42,3854 ms
+2023-06-11 15:26:34.979 +03:00 [DBG] Execution loop Worker:197880cb has started in 47,0244 ms
+2023-06-11 15:26:34.979 +03:00 [DBG] Removing outdated records from the 'Job' table...
+2023-06-11 15:26:34.983 +03:00 [DBG] Execution loop Worker:ff60be9a has started in 51,1683 ms
+2023-06-11 15:26:34.988 +03:00 [DBG] Execution loop Worker:ad694d53 has started in 55,8945 ms
+2023-06-11 15:26:34.992 +03:00 [DBG] Removing outdated records from the 'List' table...
+2023-06-11 15:26:34.992 +03:00 [DBG] Execution loop Worker:83a19f69 has started in 60,1484 ms
+2023-06-11 15:26:34.996 +03:00 [DBG] Execution loop Worker:c7dfabcd has started in 63,9173 ms
+2023-06-11 15:26:34.996 +03:00 [DBG] Removing outdated records from the 'Set' table...
+2023-06-11 15:26:34.999 +03:00 [DBG] Execution loop Worker:0a091c0e has started in 67,4889 ms
+2023-06-11 15:26:35.003 +03:00 [DBG] Execution loop Worker:ff86087b has started in 71,6516 ms
+2023-06-11 15:26:35.008 +03:00 [DBG] Execution loop Worker:40b90902 has started in 76,4005 ms
+2023-06-11 15:26:35.011 +03:00 [DBG] Execution loop Worker:e54d7162 has started in 78,9887 ms
+2023-06-11 15:26:35.015 +03:00 [DBG] Execution loop Worker:c210aeba has started in 83,5024 ms
+2023-06-11 15:26:35.018 +03:00 [DBG] Execution loop Worker:12c71e31 has started in 86,5269 ms
+2023-06-11 15:26:35.018 +03:00 [DBG] Removing outdated records from the 'Hash' table...
+2023-06-11 15:26:35.023 +03:00 [INF] Server desktop-f0slsj8:952:66186123 all the dispatchers started
+2023-06-11 15:26:35.023 +03:00 [DBG] Execution loop DelayedJobScheduler:152a7160 has started in 12,6293 ms
+2023-06-11 15:26:35.027 +03:00 [DBG] Execution loop RecurringJobScheduler:7960f412 has started in 8,7306 ms
+2023-06-11 15:27:04.962 +03:00 [DBG] Server desktop-f0slsj8:952:66186123 heartbeat successfully sent
+2023-06-11 15:27:34.986 +03:00 [DBG] Server desktop-f0slsj8:952:66186123 heartbeat successfully sent
+2023-06-11 15:27:49.539 +03:00 [INF] Start installing Hangfire SQL objects...
+2023-06-11 15:27:50.310 +03:00 [INF] Hangfire SQL objects installed.
+2023-06-11 15:27:51.060 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-F0SLSJ8@AntonSDB'
+2023-06-11 15:27:51.060 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-06-11 15:27:51.061 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-11 15:27:51.082 +03:00 [DBG] Execution loop BackgroundServerProcess:169471eb has started in 12,0042 ms
+2023-06-11 15:27:51.103 +03:00 [INF] Server desktop-f0slsj8:5484:75f97edb successfully announced in 13,3484 ms
+2023-06-11 15:27:51.108 +03:00 [INF] Server desktop-f0slsj8:5484:75f97edb is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-11 15:27:51.146 +03:00 [DBG] Execution loop ServerHeartbeatProcess:3a55dd50 has started in 41,936 ms
+2023-06-11 15:27:51.149 +03:00 [DBG] Execution loop ServerWatchdog:69d5bfb0 has started in 3,7427 ms
+2023-06-11 15:27:51.153 +03:00 [DBG] Execution loop ServerJobCancellationWatcher:d8e266b8 has started in 7,3948 ms
+2023-06-11 15:27:51.158 +03:00 [DBG] Execution loop ExpirationManager:cc3e09ce has started in 4,623 ms
+2023-06-11 15:27:51.162 +03:00 [DBG] Execution loop CountersAggregator:7ad91581 has started in 7,9509 ms
+2023-06-11 15:27:51.167 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 15:27:51.167 +03:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2023-06-11 15:27:51.168 +03:00 [DBG] Execution loop SqlServerHeartbeatProcess:3d45a30c has started in 10,0184 ms
+2023-06-11 15:27:51.173 +03:00 [DBG] Execution loop Worker:37283e7e has started in 10,7754 ms
+2023-06-11 15:27:51.178 +03:00 [DBG] Execution loop Worker:8d073a9a has started in 15,1588 ms
+2023-06-11 15:27:51.183 +03:00 [DBG] Execution loop Worker:e4464060 has started in 20,1521 ms
+2023-06-11 15:27:51.188 +03:00 [DBG] Execution loop Worker:a1c4be2a has started in 25,9571 ms
+2023-06-11 15:27:51.194 +03:00 [INF] 1 servers were removed due to timeout
+2023-06-11 15:27:51.194 +03:00 [DBG] Execution loop Worker:195b5f21 has started in 31,7421 ms
+2023-06-11 15:27:51.198 +03:00 [DBG] Execution loop Worker:c205e0a4 has started in 35,4894 ms
+2023-06-11 15:27:51.204 +03:00 [DBG] Execution loop Worker:a8ff0c1f has started in 41,1322 ms
+2023-06-11 15:27:51.209 +03:00 [DBG] Execution loop Worker:d9de4ee9 has started in 46,1803 ms
+2023-06-11 15:27:51.213 +03:00 [DBG] Execution loop Worker:1380d244 has started in 50,8415 ms
+2023-06-11 15:27:51.216 +03:00 [DBG] Execution loop Worker:621a24be has started in 53,9543 ms
+2023-06-11 15:27:51.220 +03:00 [DBG] Execution loop Worker:b7d17646 has started in 58,0761 ms
+2023-06-11 15:27:51.226 +03:00 [DBG] Execution loop Worker:8f001da7 has started in 63,6112 ms
+2023-06-11 15:27:51.227 +03:00 [DBG] Removing outdated records from the 'Job' table...
+2023-06-11 15:27:51.232 +03:00 [DBG] Execution loop Worker:230bd3c2 has started in 69,2755 ms
+2023-06-11 15:27:51.235 +03:00 [DBG] Execution loop Worker:eef15a22 has started in 72,2223 ms
+2023-06-11 15:27:51.240 +03:00 [DBG] Execution loop Worker:cc7284c5 has started in 76,642 ms
+2023-06-11 15:27:51.243 +03:00 [DBG] Execution loop Worker:885c2b3e has started in 80,3378 ms
+2023-06-11 15:27:51.247 +03:00 [DBG] Execution loop Worker:c7dac441 has started in 84,7234 ms
+2023-06-11 15:27:51.252 +03:00 [DBG] Execution loop Worker:3ceacc4f has started in 89,1527 ms
+2023-06-11 15:27:51.256 +03:00 [DBG] Execution loop Worker:fd2a3d0f has started in 93,2355 ms
+2023-06-11 15:27:51.260 +03:00 [DBG] Execution loop Worker:623e5758 has started in 97,2861 ms
+2023-06-11 15:27:51.264 +03:00 [DBG] Execution loop DelayedJobScheduler:000b50df has started in 8,0859 ms
+2023-06-11 15:27:51.265 +03:00 [INF] Server desktop-f0slsj8:5484:75f97edb all the dispatchers started
+2023-06-11 15:27:51.269 +03:00 [DBG] Execution loop RecurringJobScheduler:82dfaeaa has started in 7,9743 ms
+2023-06-11 15:27:51.269 +03:00 [DBG] Removing outdated records from the 'List' table...
+2023-06-11 15:27:51.283 +03:00 [DBG] Removing outdated records from the 'Set' table...
+2023-06-11 15:27:51.287 +03:00 [DBG] Removing outdated records from the 'Hash' table...
+2023-06-11 15:28:21.188 +03:00 [DBG] Server desktop-f0slsj8:5484:75f97edb heartbeat successfully sent
+2023-06-11 15:28:51.200 +03:00 [DBG] Server desktop-f0slsj8:5484:75f97edb heartbeat successfully sent
+2023-06-11 15:29:21.212 +03:00 [DBG] Server desktop-f0slsj8:5484:75f97edb heartbeat successfully sent
+2023-06-11 15:29:51.232 +03:00 [DBG] Server desktop-f0slsj8:5484:75f97edb heartbeat successfully sent
+2023-06-11 15:30:21.247 +03:00 [DBG] Server desktop-f0slsj8:5484:75f97edb heartbeat successfully sent
+2023-06-11 15:30:51.270 +03:00 [DBG] Server desktop-f0slsj8:5484:75f97edb heartbeat successfully sent
+2023-06-11 15:32:40.614 +03:00 [INF] Start installing Hangfire SQL objects...
+2023-06-11 15:32:41.418 +03:00 [INF] Hangfire SQL objects installed.
+2023-06-11 15:32:42.180 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-F0SLSJ8@AntonSDB'
+2023-06-11 15:32:42.181 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-06-11 15:32:42.181 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-11 15:32:42.202 +03:00 [DBG] Execution loop BackgroundServerProcess:71628ac9 has started in 9,9625 ms
+2023-06-11 15:32:42.229 +03:00 [INF] Server desktop-f0slsj8:24844:03808946 successfully announced in 19,3562 ms
+2023-06-11 15:32:42.240 +03:00 [DBG] Execution loop ServerHeartbeatProcess:b5ec3986 has started in 9,8376 ms
+2023-06-11 15:32:42.241 +03:00 [INF] Server desktop-f0slsj8:24844:03808946 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-11 15:32:42.254 +03:00 [DBG] Execution loop ServerWatchdog:5f36f7ba has started in 12,593 ms
+2023-06-11 15:32:42.257 +03:00 [DBG] Execution loop ServerJobCancellationWatcher:fe78a38b has started in 10,9225 ms
+2023-06-11 15:32:42.264 +03:00 [DBG] Execution loop ExpirationManager:829f20a1 has started in 7,3867 ms
+2023-06-11 15:32:42.269 +03:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2023-06-11 15:32:42.271 +03:00 [INF] 2 servers were removed due to timeout
+2023-06-11 15:32:42.274 +03:00 [DBG] Execution loop CountersAggregator:b0bcc385 has started in 10,2777 ms
+2023-06-11 15:32:42.276 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 15:32:42.283 +03:00 [DBG] Execution loop SqlServerHeartbeatProcess:56b082fe has started in 11,14 ms
+2023-06-11 15:32:42.288 +03:00 [DBG] Execution loop Worker:dd632e4d has started in 8,1655 ms
+2023-06-11 15:32:42.294 +03:00 [DBG] Execution loop Worker:40cdf43d has started in 14,4548 ms
+2023-06-11 15:32:42.294 +03:00 [DBG] Execution loop Worker:beba4238 has started in 14,4564 ms
+2023-06-11 15:32:42.297 +03:00 [DBG] Execution loop Worker:1181214d has started in 17,3867 ms
+2023-06-11 15:32:42.301 +03:00 [DBG] Execution loop Worker:20d13126 has started in 21,3701 ms
+2023-06-11 15:32:42.306 +03:00 [DBG] Execution loop Worker:e52dce12 has started in 25,9861 ms
+2023-06-11 15:32:42.311 +03:00 [DBG] Execution loop Worker:b7e4db46 has started in 30,8087 ms
+2023-06-11 15:32:42.312 +03:00 [DBG] Removing outdated records from the 'Job' table...
+2023-06-11 15:32:42.315 +03:00 [DBG] Execution loop Worker:77c93913 has started in 35,3636 ms
+2023-06-11 15:32:42.319 +03:00 [DBG] Execution loop Worker:285d22fc has started in 39,4811 ms
+2023-06-11 15:32:42.324 +03:00 [DBG] Execution loop Worker:a771b562 has started in 44,0782 ms
+2023-06-11 15:32:42.325 +03:00 [DBG] Removing outdated records from the 'List' table...
+2023-06-11 15:32:42.328 +03:00 [DBG] Execution loop Worker:3dc79c4e has started in 48,5254 ms
+2023-06-11 15:32:42.333 +03:00 [DBG] Execution loop Worker:61245173 has started in 53,4402 ms
+2023-06-11 15:32:42.334 +03:00 [DBG] Removing outdated records from the 'Set' table...
+2023-06-11 15:32:42.337 +03:00 [DBG] Execution loop Worker:aa3f32f8 has started in 57,4638 ms
+2023-06-11 15:32:42.341 +03:00 [DBG] Execution loop Worker:40cab201 has started in 60,8342 ms
+2023-06-11 15:32:42.341 +03:00 [DBG] Removing outdated records from the 'Hash' table...
+2023-06-11 15:32:42.345 +03:00 [DBG] Execution loop Worker:186bada0 has started in 65,2219 ms
+2023-06-11 15:32:42.349 +03:00 [DBG] Execution loop Worker:133ff850 has started in 67,9243 ms
+2023-06-11 15:32:42.353 +03:00 [DBG] Execution loop Worker:3624d126 has started in 72,6794 ms
+2023-06-11 15:32:42.356 +03:00 [DBG] Execution loop Worker:14664132 has started in 75,9717 ms
+2023-06-11 15:32:42.359 +03:00 [DBG] Execution loop Worker:25fdb627 has started in 79,1789 ms
+2023-06-11 15:32:42.361 +03:00 [DBG] Execution loop Worker:e9cf7791 has started in 81,7261 ms
+2023-06-11 15:32:42.365 +03:00 [INF] Server desktop-f0slsj8:24844:03808946 all the dispatchers started
+2023-06-11 15:32:42.366 +03:00 [DBG] Execution loop DelayedJobScheduler:d4f386cf has started in 9,8961 ms
+2023-06-11 15:32:42.369 +03:00 [DBG] Execution loop RecurringJobScheduler:9ecc638e has started in 7,6726 ms
+2023-06-11 15:33:12.266 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:33:42.298 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:34:12.302 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:34:42.322 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:35:12.368 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:35:42.391 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:36:12.401 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:36:42.406 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:37:12.421 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:37:42.281 +03:00 [INF] 1 servers were removed due to timeout
+2023-06-11 15:37:42.338 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 15:37:42.429 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:38:12.446 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:38:42.451 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:39:12.465 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:39:42.479 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:40:12.494 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:40:42.524 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:41:12.533 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:41:29.470 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-11 15:41:29.473 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-11 15:41:42.552 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:42:12.561 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:42:42.408 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 15:42:42.566 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:43:12.569 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:43:42.590 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:44:12.595 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:44:42.614 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:45:12.617 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:45:42.633 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:46:12.650 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:46:42.653 +03:00 [DBG] Server desktop-f0slsj8:24844:03808946 heartbeat successfully sent
+2023-06-11 15:48:20.370 +03:00 [INF] Start installing Hangfire SQL objects...
+2023-06-11 15:48:21.282 +03:00 [INF] Hangfire SQL objects installed.
+2023-06-11 15:48:22.058 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-F0SLSJ8@AntonSDB'
+2023-06-11 15:48:22.058 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-06-11 15:48:22.059 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-11 15:48:22.079 +03:00 [DBG] Execution loop BackgroundServerProcess:2b4fd2e1 has started in 11,6376 ms
+2023-06-11 15:48:22.102 +03:00 [INF] Server desktop-f0slsj8:10200:68110907 successfully announced in 15,8022 ms
+2023-06-11 15:48:22.109 +03:00 [DBG] Execution loop ServerHeartbeatProcess:9c9f946c has started in 5,8641 ms
+2023-06-11 15:48:22.109 +03:00 [INF] Server desktop-f0slsj8:10200:68110907 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-11 15:48:22.114 +03:00 [DBG] Execution loop ServerWatchdog:107e478b has started in 5,2143 ms
+2023-06-11 15:48:22.118 +03:00 [DBG] Execution loop ServerJobCancellationWatcher:0d9cf8d2 has started in 8,6156 ms
+2023-06-11 15:48:22.124 +03:00 [DBG] Execution loop ExpirationManager:8816b0d1 has started in 5,7949 ms
+2023-06-11 15:48:22.128 +03:00 [DBG] Execution loop CountersAggregator:efaa65b2 has started in 9,0937 ms
+2023-06-11 15:48:22.132 +03:00 [DBG] Execution loop SqlServerHeartbeatProcess:cf27669f has started in 8,1186 ms
+2023-06-11 15:48:22.134 +03:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2023-06-11 15:48:22.136 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 15:48:22.136 +03:00 [DBG] Execution loop Worker:62b9f0f5 has started in 7,3318 ms
+2023-06-11 15:48:22.140 +03:00 [DBG] Execution loop Worker:d8b8a25f has started in 12,0501 ms
+2023-06-11 15:48:22.144 +03:00 [DBG] Execution loop Worker:4e1480a5 has started in 15,9525 ms
+2023-06-11 15:48:22.148 +03:00 [DBG] Execution loop Worker:9dedafa4 has started in 20,029 ms
+2023-06-11 15:48:22.152 +03:00 [DBG] Execution loop Worker:09130c72 has started in 24,093 ms
+2023-06-11 15:48:22.156 +03:00 [DBG] Execution loop Worker:a4bc7219 has started in 28,012 ms
+2023-06-11 15:48:22.160 +03:00 [DBG] Execution loop Worker:2bba093e has started in 31,8971 ms
+2023-06-11 15:48:22.165 +03:00 [DBG] Execution loop Worker:5d8b941f has started in 36,809 ms
+2023-06-11 15:48:22.168 +03:00 [DBG] Execution loop Worker:593c92b2 has started in 39,6888 ms
+2023-06-11 15:48:22.173 +03:00 [DBG] Execution loop Worker:804f94d2 has started in 44,7631 ms
+2023-06-11 15:48:22.173 +03:00 [DBG] Removing outdated records from the 'Job' table...
+2023-06-11 15:48:22.178 +03:00 [DBG] Execution loop Worker:7fbcdc7d has started in 49,2809 ms
+2023-06-11 15:48:22.182 +03:00 [DBG] Execution loop Worker:de2521a3 has started in 53,684 ms
+2023-06-11 15:48:22.187 +03:00 [DBG] Execution loop Worker:8c7ceaf0 has started in 58,3549 ms
+2023-06-11 15:48:22.187 +03:00 [DBG] Removing outdated records from the 'List' table...
+2023-06-11 15:48:22.191 +03:00 [DBG] Execution loop Worker:7a9d39ba has started in 62,7512 ms
+2023-06-11 15:48:22.196 +03:00 [DBG] Execution loop Worker:35f73b8c has started in 67,2545 ms
+2023-06-11 15:48:22.200 +03:00 [DBG] Execution loop Worker:e8a931e5 has started in 71,514 ms
+2023-06-11 15:48:22.204 +03:00 [DBG] Execution loop Worker:16afbc44 has started in 75,6706 ms
+2023-06-11 15:48:22.209 +03:00 [DBG] Execution loop Worker:5d3c4a3f has started in 80,5494 ms
+2023-06-11 15:48:22.210 +03:00 [DBG] Removing outdated records from the 'Set' table...
+2023-06-11 15:48:22.214 +03:00 [DBG] Execution loop Worker:6d40da2f has started in 85,8273 ms
+2023-06-11 15:48:22.218 +03:00 [DBG] Execution loop Worker:245577e7 has started in 90,1629 ms
+2023-06-11 15:48:22.223 +03:00 [INF] Server desktop-f0slsj8:10200:68110907 all the dispatchers started
+2023-06-11 15:48:22.223 +03:00 [DBG] Execution loop DelayedJobScheduler:80f3f12d has started in 9,3715 ms
+2023-06-11 15:48:22.228 +03:00 [DBG] Execution loop RecurringJobScheduler:b8600b1e has started in 10,0841 ms
+2023-06-11 15:48:22.232 +03:00 [DBG] Removing outdated records from the 'Hash' table...
+2023-06-11 15:48:33.349 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-11 15:48:33.352 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-11 15:48:52.160 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 15:49:22.179 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 15:49:52.183 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 15:50:22.196 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 15:50:52.205 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 15:51:22.221 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 15:51:52.242 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 15:52:22.240 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 15:52:52.245 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 15:53:22.151 +03:00 [INF] 1 servers were removed due to timeout
+2023-06-11 15:53:22.194 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 15:53:22.254 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 15:53:52.266 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 15:54:22.273 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 15:54:52.283 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 15:55:22.290 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 15:55:52.311 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 15:56:22.309 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 15:56:52.323 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 15:57:22.333 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 15:57:52.355 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 15:58:22.250 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 15:58:22.373 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 15:58:52.387 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 15:59:22.404 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 15:59:52.408 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:00:22.426 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:00:52.435 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:01:22.451 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:01:52.470 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:02:22.484 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:02:52.494 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:03:22.312 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 16:03:22.514 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:03:52.526 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:04:22.531 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:04:52.536 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:05:22.543 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:05:52.555 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:06:22.564 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:06:52.588 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:07:22.599 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:07:42.964 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-11 16:07:42.964 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-11 16:07:52.614 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:08:22.348 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 16:08:22.640 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:08:52.655 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:09:22.666 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:09:52.671 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:10:22.680 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:10:52.683 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:11:22.716 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:11:52.714 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:12:22.745 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:12:52.759 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:13:22.362 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 16:13:22.767 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:13:52.766 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:14:22.783 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:14:52.789 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:15:22.811 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:15:52.819 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:16:22.849 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:16:52.866 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:17:22.863 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:17:52.872 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:18:22.253 +03:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2023-06-11 16:18:22.260 +03:00 [DBG] Removing outdated records from the 'Job' table...
+2023-06-11 16:18:22.271 +03:00 [DBG] Removing outdated records from the 'List' table...
+2023-06-11 16:18:22.276 +03:00 [DBG] Removing outdated records from the 'Set' table...
+2023-06-11 16:18:22.279 +03:00 [DBG] Removing outdated records from the 'Hash' table...
+2023-06-11 16:18:22.407 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 16:18:22.874 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:18:52.878 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:19:22.891 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:19:52.940 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:20:22.954 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:20:52.965 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:21:22.974 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:21:52.991 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:22:23.017 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:22:53.027 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:23:22.455 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 16:23:23.040 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:23:53.050 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:24:23.069 +03:00 [DBG] Server desktop-f0slsj8:10200:68110907 heartbeat successfully sent
+2023-06-11 16:24:51.050 +03:00 [INF] Start installing Hangfire SQL objects...
+2023-06-11 16:24:51.835 +03:00 [INF] Hangfire SQL objects installed.
+2023-06-11 16:24:52.589 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-F0SLSJ8@AntonSDB'
+2023-06-11 16:24:52.589 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-06-11 16:24:52.589 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-11 16:24:52.616 +03:00 [DBG] Execution loop BackgroundServerProcess:f3609da7 has started in 13,6665 ms
+2023-06-11 16:24:52.643 +03:00 [INF] Server desktop-f0slsj8:13104:4491cf8b successfully announced in 19,3939 ms
+2023-06-11 16:24:52.650 +03:00 [DBG] Execution loop ServerHeartbeatProcess:78d76203 has started in 5,7738 ms
+2023-06-11 16:24:52.650 +03:00 [INF] Server desktop-f0slsj8:13104:4491cf8b is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-11 16:24:52.655 +03:00 [DBG] Execution loop ServerWatchdog:97503ff2 has started in 4,2051 ms
+2023-06-11 16:24:52.657 +03:00 [DBG] Execution loop ServerJobCancellationWatcher:41c88079 has started in 6,1908 ms
+2023-06-11 16:24:52.662 +03:00 [DBG] Execution loop ExpirationManager:7e1e8290 has started in 5,4091 ms
+2023-06-11 16:24:52.665 +03:00 [DBG] Execution loop CountersAggregator:9095d5cd has started in 7,6179 ms
+2023-06-11 16:24:52.666 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 16:24:52.667 +03:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2023-06-11 16:24:52.672 +03:00 [DBG] Execution loop SqlServerHeartbeatProcess:5f2b30bd has started in 9,5747 ms
+2023-06-11 16:24:52.676 +03:00 [DBG] Execution loop Worker:3629ac23 has started in 8,3502 ms
+2023-06-11 16:24:52.680 +03:00 [DBG] Execution loop Worker:ae55a986 has started in 12,8035 ms
+2023-06-11 16:24:52.685 +03:00 [DBG] Execution loop Worker:2fe91ce8 has started in 17,5988 ms
+2023-06-11 16:24:52.689 +03:00 [DBG] Execution loop Worker:948fbf2e has started in 21,7045 ms
+2023-06-11 16:24:52.693 +03:00 [DBG] Execution loop Worker:32383a21 has started in 25,2944 ms
+2023-06-11 16:24:52.697 +03:00 [DBG] Execution loop Worker:cb80bbb7 has started in 28,9576 ms
+2023-06-11 16:24:52.698 +03:00 [DBG] Removing outdated records from the 'Job' table...
+2023-06-11 16:24:52.700 +03:00 [DBG] Execution loop Worker:3ab3a538 has started in 32,5535 ms
+2023-06-11 16:24:52.705 +03:00 [DBG] Execution loop Worker:46615eae has started in 37,0538 ms
+2023-06-11 16:24:52.706 +03:00 [DBG] Removing outdated records from the 'List' table...
+2023-06-11 16:24:52.709 +03:00 [DBG] Execution loop Worker:94164bfb has started in 40,9792 ms
+2023-06-11 16:24:52.712 +03:00 [DBG] Execution loop Worker:4d1e5d05 has started in 44,6315 ms
+2023-06-11 16:24:52.713 +03:00 [DBG] Removing outdated records from the 'Set' table...
+2023-06-11 16:24:52.716 +03:00 [DBG] Execution loop Worker:749017a1 has started in 48,7931 ms
+2023-06-11 16:24:52.717 +03:00 [DBG] Removing outdated records from the 'Hash' table...
+2023-06-11 16:24:52.720 +03:00 [DBG] Execution loop Worker:54bb8885 has started in 52,4693 ms
+2023-06-11 16:24:52.725 +03:00 [DBG] Execution loop Worker:b338e166 has started in 57,3639 ms
+2023-06-11 16:24:52.729 +03:00 [DBG] Execution loop Worker:8c5cd895 has started in 61,0316 ms
+2023-06-11 16:24:52.732 +03:00 [DBG] Execution loop Worker:751f32df has started in 64,3477 ms
+2023-06-11 16:24:52.737 +03:00 [DBG] Execution loop Worker:538bf819 has started in 69,4356 ms
+2023-06-11 16:24:52.742 +03:00 [DBG] Execution loop Worker:86bcef9d has started in 74,0444 ms
+2023-06-11 16:24:52.746 +03:00 [DBG] Execution loop Worker:0e73cde2 has started in 78,8009 ms
+2023-06-11 16:24:52.751 +03:00 [DBG] Execution loop Worker:e33c07b6 has started in 83,6634 ms
+2023-06-11 16:24:52.758 +03:00 [DBG] Execution loop Worker:4508c36b has started in 90,5995 ms
+2023-06-11 16:24:52.770 +03:00 [INF] Server desktop-f0slsj8:13104:4491cf8b all the dispatchers started
+2023-06-11 16:24:52.771 +03:00 [DBG] Execution loop DelayedJobScheduler:965589b3 has started in 16,9171 ms
+2023-06-11 16:24:52.780 +03:00 [DBG] Execution loop RecurringJobScheduler:1f299d27 has started in 20,1174 ms
+2023-06-11 16:25:01.330 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-11 16:25:01.336 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-11 16:25:07.343 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-11 16:25:07.343 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-11 16:25:23.100 +03:00 [DBG] Server desktop-f0slsj8:13104:4491cf8b heartbeat successfully sent
+2023-06-11 16:25:53.110 +03:00 [DBG] Server desktop-f0slsj8:13104:4491cf8b heartbeat successfully sent
+2023-06-11 16:26:23.151 +03:00 [DBG] Server desktop-f0slsj8:13104:4491cf8b heartbeat successfully sent
+2023-06-11 16:26:53.164 +03:00 [DBG] Server desktop-f0slsj8:13104:4491cf8b heartbeat successfully sent
+2023-06-11 16:27:23.170 +03:00 [DBG] Server desktop-f0slsj8:13104:4491cf8b heartbeat successfully sent
+2023-06-11 16:27:53.205 +03:00 [DBG] Server desktop-f0slsj8:13104:4491cf8b heartbeat successfully sent
+2023-06-11 16:28:23.229 +03:00 [DBG] Server desktop-f0slsj8:13104:4491cf8b heartbeat successfully sent
+2023-06-11 16:28:53.235 +03:00 [DBG] Server desktop-f0slsj8:13104:4491cf8b heartbeat successfully sent
+2023-06-11 16:29:23.264 +03:00 [DBG] Server desktop-f0slsj8:13104:4491cf8b heartbeat successfully sent
+2023-06-11 16:29:52.691 +03:00 [INF] 1 servers were removed due to timeout
+2023-06-11 16:29:52.705 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 16:29:53.276 +03:00 [DBG] Server desktop-f0slsj8:13104:4491cf8b heartbeat successfully sent
+2023-06-11 16:30:23.287 +03:00 [DBG] Server desktop-f0slsj8:13104:4491cf8b heartbeat successfully sent
+2023-06-11 16:30:53.307 +03:00 [DBG] Server desktop-f0slsj8:13104:4491cf8b heartbeat successfully sent
+2023-06-11 16:31:23.345 +03:00 [DBG] Server desktop-f0slsj8:13104:4491cf8b heartbeat successfully sent
+2023-06-11 16:31:53.364 +03:00 [DBG] Server desktop-f0slsj8:13104:4491cf8b heartbeat successfully sent
+2023-06-11 16:32:23.383 +03:00 [DBG] Server desktop-f0slsj8:13104:4491cf8b heartbeat successfully sent
+2023-06-11 16:32:53.397 +03:00 [DBG] Server desktop-f0slsj8:13104:4491cf8b heartbeat successfully sent
+2023-06-11 16:33:23.414 +03:00 [DBG] Server desktop-f0slsj8:13104:4491cf8b heartbeat successfully sent
+2023-06-11 16:33:53.426 +03:00 [DBG] Server desktop-f0slsj8:13104:4491cf8b heartbeat successfully sent
+2023-06-11 16:35:11.674 +03:00 [INF] Start installing Hangfire SQL objects...
+2023-06-11 16:35:12.632 +03:00 [INF] Hangfire SQL objects installed.
+2023-06-11 16:35:13.423 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-F0SLSJ8@AntonSDB'
+2023-06-11 16:35:13.423 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-06-11 16:35:13.424 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-11 16:35:13.448 +03:00 [DBG] Execution loop BackgroundServerProcess:67d96235 has started in 11,2545 ms
+2023-06-11 16:35:13.481 +03:00 [INF] Server desktop-f0slsj8:10492:d67147dd successfully announced in 22,9546 ms
+2023-06-11 16:35:13.488 +03:00 [DBG] Execution loop ServerHeartbeatProcess:70c40d80 has started in 6,159 ms
+2023-06-11 16:35:13.489 +03:00 [INF] Server desktop-f0slsj8:10492:d67147dd is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-11 16:35:13.494 +03:00 [DBG] Execution loop ServerWatchdog:434a450c has started in 5,244 ms
+2023-06-11 16:35:13.498 +03:00 [DBG] Execution loop ServerJobCancellationWatcher:98f66e97 has started in 8,3069 ms
+2023-06-11 16:35:13.503 +03:00 [DBG] Execution loop ExpirationManager:949d4aa7 has started in 7,8334 ms
+2023-06-11 16:35:13.507 +03:00 [DBG] Execution loop CountersAggregator:dfb8e595 has started in 7,8147 ms
+2023-06-11 16:35:13.509 +03:00 [DBG] Execution loop SqlServerHeartbeatProcess:d0565a71 has started in 6,2538 ms
+2023-06-11 16:35:13.510 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 16:35:13.512 +03:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2023-06-11 16:35:13.514 +03:00 [DBG] Execution loop Worker:8079e4ba has started in 7,2164 ms
+2023-06-11 16:35:13.518 +03:00 [DBG] Execution loop Worker:e57854d4 has started in 11,5333 ms
+2023-06-11 16:35:13.522 +03:00 [DBG] Execution loop Worker:f9df133d has started in 15,4302 ms
+2023-06-11 16:35:13.526 +03:00 [DBG] Execution loop Worker:80429ed4 has started in 19,1594 ms
+2023-06-11 16:35:13.530 +03:00 [DBG] Execution loop Worker:590dfb14 has started in 22,8969 ms
+2023-06-11 16:35:13.534 +03:00 [DBG] Execution loop Worker:7c239b84 has started in 26,8264 ms
+2023-06-11 16:35:13.537 +03:00 [DBG] Execution loop Worker:62763612 has started in 30,5326 ms
+2023-06-11 16:35:13.542 +03:00 [DBG] Execution loop Worker:906ccd3a has started in 34,8828 ms
+2023-06-11 16:35:13.545 +03:00 [DBG] Execution loop Worker:d731df76 has started in 38,0755 ms
+2023-06-11 16:35:13.549 +03:00 [DBG] Execution loop Worker:6b3443de has started in 42,1408 ms
+2023-06-11 16:35:13.553 +03:00 [DBG] Execution loop Worker:bce5b717 has started in 45,6723 ms
+2023-06-11 16:35:13.557 +03:00 [DBG] Execution loop Worker:c7bdafb9 has started in 50,0961 ms
+2023-06-11 16:35:13.559 +03:00 [DBG] Execution loop Worker:3abbaff2 has started in 52,4013 ms
+2023-06-11 16:35:13.564 +03:00 [DBG] Execution loop Worker:c2263e96 has started in 55,9554 ms
+2023-06-11 16:35:13.566 +03:00 [DBG] Execution loop Worker:b8ab6d45 has started in 59,503 ms
+2023-06-11 16:35:13.572 +03:00 [DBG] Execution loop Worker:848e2170 has started in 64,3599 ms
+2023-06-11 16:35:13.572 +03:00 [DBG] Removing outdated records from the 'Job' table...
+2023-06-11 16:35:13.574 +03:00 [DBG] Execution loop Worker:cc09fee5 has started in 67,606 ms
+2023-06-11 16:35:13.578 +03:00 [DBG] Execution loop Worker:c11b3ad4 has started in 71,3973 ms
+2023-06-11 16:35:13.581 +03:00 [DBG] Execution loop Worker:34f43649 has started in 74,1281 ms
+2023-06-11 16:35:13.584 +03:00 [DBG] Execution loop Worker:a90d1ef8 has started in 77,5309 ms
+2023-06-11 16:35:13.588 +03:00 [INF] Server desktop-f0slsj8:10492:d67147dd all the dispatchers started
+2023-06-11 16:35:13.588 +03:00 [DBG] Execution loop DelayedJobScheduler:2d528738 has started in 7,0666 ms
+2023-06-11 16:35:13.592 +03:00 [DBG] Execution loop RecurringJobScheduler:8fdd8851 has started in 7,4136 ms
+2023-06-11 16:35:13.600 +03:00 [DBG] Removing outdated records from the 'List' table...
+2023-06-11 16:35:13.611 +03:00 [DBG] Removing outdated records from the 'Set' table...
+2023-06-11 16:35:13.614 +03:00 [DBG] Removing outdated records from the 'Hash' table...
+2023-06-11 16:35:19.299 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-11 16:35:19.302 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-11 16:35:35.812 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-11 16:35:35.812 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-11 16:35:43.549 +03:00 [DBG] Server desktop-f0slsj8:10492:d67147dd heartbeat successfully sent
+2023-06-11 16:36:13.567 +03:00 [DBG] Server desktop-f0slsj8:10492:d67147dd heartbeat successfully sent
+2023-06-11 16:36:43.573 +03:00 [DBG] Server desktop-f0slsj8:10492:d67147dd heartbeat successfully sent
+2023-06-11 16:37:13.587 +03:00 [DBG] Server desktop-f0slsj8:10492:d67147dd heartbeat successfully sent
+2023-06-11 16:37:43.601 +03:00 [DBG] Server desktop-f0slsj8:10492:d67147dd heartbeat successfully sent
+2023-06-11 16:39:20.595 +03:00 [INF] Start installing Hangfire SQL objects...
+2023-06-11 16:39:21.548 +03:00 [INF] Hangfire SQL objects installed.
+2023-06-11 16:39:22.489 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-F0SLSJ8@AntonSDB'
+2023-06-11 16:39:22.489 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-06-11 16:39:22.489 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-11 16:39:22.523 +03:00 [DBG] Execution loop BackgroundServerProcess:e3653e90 has started in 24,1256 ms
+2023-06-11 16:39:22.550 +03:00 [INF] Server desktop-f0slsj8:3928:9bd20a18 successfully announced in 19,0208 ms
+2023-06-11 16:39:22.555 +03:00 [DBG] Execution loop ServerHeartbeatProcess:e32f915b has started in 4,5 ms
+2023-06-11 16:39:22.556 +03:00 [INF] Server desktop-f0slsj8:3928:9bd20a18 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-11 16:39:22.559 +03:00 [DBG] Execution loop ServerWatchdog:fc5bfd2a has started in 2,9929 ms
+2023-06-11 16:39:22.562 +03:00 [DBG] Execution loop ServerJobCancellationWatcher:6f277547 has started in 5,5417 ms
+2023-06-11 16:39:22.565 +03:00 [DBG] Execution loop ExpirationManager:a0096ac1 has started in 3,64 ms
+2023-06-11 16:39:22.569 +03:00 [DBG] Execution loop CountersAggregator:f5f5de11 has started in 6,7752 ms
+2023-06-11 16:39:22.572 +03:00 [DBG] Execution loop SqlServerHeartbeatProcess:c361dd9d has started in 6,8532 ms
+2023-06-11 16:39:22.573 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 16:39:22.575 +03:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2023-06-11 16:39:22.577 +03:00 [DBG] Execution loop Worker:99d682ee has started in 7,9699 ms
+2023-06-11 16:39:22.581 +03:00 [DBG] Execution loop Worker:74b8b531 has started in 11,6163 ms
+2023-06-11 16:39:22.585 +03:00 [DBG] Execution loop Worker:8ec6a2bb has started in 15,7849 ms
+2023-06-11 16:39:22.589 +03:00 [INF] 1 servers were removed due to timeout
+2023-06-11 16:39:22.589 +03:00 [DBG] Execution loop Worker:984c309c has started in 20,162 ms
+2023-06-11 16:39:22.592 +03:00 [DBG] Execution loop Worker:7b46297b has started in 22,61 ms
+2023-06-11 16:39:22.595 +03:00 [DBG] Execution loop Worker:68b20fd6 has started in 25,9817 ms
+2023-06-11 16:39:22.599 +03:00 [DBG] Execution loop Worker:240a53ab has started in 29,9472 ms
+2023-06-11 16:39:22.603 +03:00 [DBG] Execution loop Worker:06fce864 has started in 33,7872 ms
+2023-06-11 16:39:22.607 +03:00 [DBG] Execution loop Worker:f638be8b has started in 37,6562 ms
+2023-06-11 16:39:22.611 +03:00 [DBG] Execution loop Worker:7b0a1cc1 has started in 41,6316 ms
+2023-06-11 16:39:22.615 +03:00 [DBG] Execution loop Worker:159033d4 has started in 45,9257 ms
+2023-06-11 16:39:22.619 +03:00 [DBG] Execution loop Worker:77a0d958 has started in 49,5788 ms
+2023-06-11 16:39:22.624 +03:00 [DBG] Execution loop Worker:eed5738d has started in 54,7441 ms
+2023-06-11 16:39:22.627 +03:00 [DBG] Execution loop Worker:193bc941 has started in 57,6901 ms
+2023-06-11 16:39:22.631 +03:00 [DBG] Removing outdated records from the 'Job' table...
+2023-06-11 16:39:22.631 +03:00 [DBG] Execution loop Worker:212efe3f has started in 61,9069 ms
+2023-06-11 16:39:22.635 +03:00 [DBG] Execution loop Worker:0f3f30a2 has started in 66,1484 ms
+2023-06-11 16:39:22.640 +03:00 [DBG] Execution loop Worker:61732374 has started in 70,561 ms
+2023-06-11 16:39:22.644 +03:00 [DBG] Execution loop Worker:d24b44cd has started in 74,9814 ms
+2023-06-11 16:39:22.648 +03:00 [DBG] Execution loop Worker:98b4dd7b has started in 79,0936 ms
+2023-06-11 16:39:22.652 +03:00 [DBG] Execution loop Worker:08daf9d2 has started in 83,2119 ms
+2023-06-11 16:39:22.657 +03:00 [DBG] Execution loop DelayedJobScheduler:cecb9292 has started in 8,4798 ms
+2023-06-11 16:39:22.657 +03:00 [INF] Server desktop-f0slsj8:3928:9bd20a18 all the dispatchers started
+2023-06-11 16:39:22.661 +03:00 [DBG] Execution loop RecurringJobScheduler:f0b1e6ec has started in 8,2372 ms
+2023-06-11 16:39:22.668 +03:00 [DBG] Removing outdated records from the 'List' table...
+2023-06-11 16:39:22.704 +03:00 [DBG] Removing outdated records from the 'Set' table...
+2023-06-11 16:39:22.709 +03:00 [DBG] Removing outdated records from the 'Hash' table...
+2023-06-11 16:39:52.599 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:40:22.612 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:40:52.627 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:41:22.689 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:41:52.699 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:42:22.710 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:42:52.716 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:43:22.726 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:43:52.730 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:44:22.595 +03:00 [INF] 1 servers were removed due to timeout
+2023-06-11 16:44:22.655 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 16:44:22.728 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:44:52.742 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:45:22.757 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:45:52.765 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:46:22.880 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:46:52.891 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:47:22.904 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:47:52.975 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:47:55.785 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-11 16:47:55.788 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-11 16:48:22.988 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:48:53.007 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:49:22.704 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 16:49:23.022 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:49:53.034 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:50:23.057 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:50:53.072 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:51:23.078 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:51:53.091 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:52:23.125 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:52:53.148 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:53:23.148 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:53:53.156 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:54:22.750 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 16:54:23.165 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:54:53.182 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:55:23.186 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:55:53.207 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:56:23.214 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:56:53.230 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:57:23.245 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:57:53.255 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:58:23.271 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:58:53.284 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:59:22.795 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 16:59:23.297 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 16:59:53.309 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 17:00:23.604 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 17:00:53.605 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 17:01:23.616 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-11 17:01:53.624 +03:00 [DBG] Server desktop-f0slsj8:3928:9bd20a18 heartbeat successfully sent
+2023-06-12 20:54:20.783 +03:00 [INF] Start installing Hangfire SQL objects...
+2023-06-12 20:54:22.338 +03:00 [INF] Hangfire SQL objects installed.
+2023-06-12 20:54:23.462 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-F0SLSJ8@AntonSDB'
+2023-06-12 20:54:23.463 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-06-12 20:54:23.463 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-12 20:54:23.488 +03:00 [DBG] Execution loop BackgroundServerProcess:851352f2 has started in 11,1076 ms
+2023-06-12 20:54:23.514 +03:00 [INF] Server desktop-f0slsj8:26180:254968cb successfully announced in 19,0385 ms
+2023-06-12 20:54:23.521 +03:00 [DBG] Execution loop ServerHeartbeatProcess:d04b2212 has started in 5,7378 ms
+2023-06-12 20:54:23.521 +03:00 [INF] Server desktop-f0slsj8:26180:254968cb is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-12 20:54:23.526 +03:00 [DBG] Execution loop ServerWatchdog:4f87a420 has started in 4,4197 ms
+2023-06-12 20:54:23.529 +03:00 [DBG] Execution loop ServerJobCancellationWatcher:33e43f55 has started in 7,6993 ms
+2023-06-12 20:54:23.534 +03:00 [DBG] Execution loop ExpirationManager:1c20c778 has started in 6,4108 ms
+2023-06-12 20:54:23.538 +03:00 [DBG] Execution loop CountersAggregator:ff55e76c has started in 8,2177 ms
+2023-06-12 20:54:23.540 +03:00 [DBG] Execution loop SqlServerHeartbeatProcess:0bd6da71 has started in 6,6944 ms
+2023-06-12 20:54:23.544 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-12 20:54:23.544 +03:00 [DBG] Execution loop Worker:21f2a6da has started in 6,3902 ms
+2023-06-12 20:54:23.545 +03:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2023-06-12 20:54:23.549 +03:00 [DBG] Execution loop Worker:0c8f5473 has started in 11,5045 ms
+2023-06-12 20:54:23.554 +03:00 [DBG] Execution loop Worker:96cec627 has started in 15,9825 ms
+2023-06-12 20:54:23.556 +03:00 [DBG] Execution loop Worker:176f630c has started in 18,1775 ms
+2023-06-12 20:54:23.560 +03:00 [DBG] Execution loop Worker:2e21588c has started in 22,4098 ms
+2023-06-12 20:54:23.565 +03:00 [DBG] Execution loop Worker:4db77e5f has started in 27,0039 ms
+2023-06-12 20:54:23.571 +03:00 [DBG] Execution loop Worker:fadaa1ef has started in 33,2692 ms
+2023-06-12 20:54:23.577 +03:00 [DBG] Execution loop Worker:8f383ea3 has started in 38,6444 ms
+2023-06-12 20:54:23.581 +03:00 [DBG] Execution loop Worker:38a7f2f4 has started in 43,1185 ms
+2023-06-12 20:54:23.582 +03:00 [INF] 1 servers were removed due to timeout
+2023-06-12 20:54:23.586 +03:00 [DBG] Execution loop Worker:6bc062e6 has started in 48,2708 ms
+2023-06-12 20:54:23.593 +03:00 [DBG] Execution loop Worker:b9021907 has started in 54,7436 ms
+2023-06-12 20:54:23.599 +03:00 [DBG] Execution loop Worker:86d843a8 has started in 60,6916 ms
+2023-06-12 20:54:23.604 +03:00 [DBG] Execution loop Worker:6dd670f3 has started in 65,6361 ms
+2023-06-12 20:54:23.610 +03:00 [DBG] Execution loop Worker:48359102 has started in 71,4946 ms
+2023-06-12 20:54:23.615 +03:00 [DBG] Execution loop Worker:b484b8a5 has started in 77,2764 ms
+2023-06-12 20:54:23.616 +03:00 [DBG] Removing outdated records from the 'Job' table...
+2023-06-12 20:54:23.620 +03:00 [DBG] Execution loop Worker:715a2cfe has started in 81,56 ms
+2023-06-12 20:54:23.624 +03:00 [DBG] Execution loop Worker:f77f3b6e has started in 85,5333 ms
+2023-06-12 20:54:23.628 +03:00 [DBG] Execution loop Worker:812de96c has started in 90,1138 ms
+2023-06-12 20:54:23.633 +03:00 [DBG] Execution loop Worker:a94d6f64 has started in 94,5926 ms
+2023-06-12 20:54:23.635 +03:00 [DBG] Execution loop Worker:25aa6cf4 has started in 97,3708 ms
+2023-06-12 20:54:23.640 +03:00 [INF] Server desktop-f0slsj8:26180:254968cb all the dispatchers started
+2023-06-12 20:54:23.640 +03:00 [DBG] Execution loop DelayedJobScheduler:1b98a50f has started in 11,6095 ms
+2023-06-12 20:54:23.644 +03:00 [DBG] Execution loop RecurringJobScheduler:9e42b31a has started in 8,0076 ms
+2023-06-12 20:54:23.680 +03:00 [DBG] Removing outdated records from the 'List' table...
+2023-06-12 20:54:23.686 +03:00 [DBG] Removing outdated records from the 'Set' table...
+2023-06-12 20:54:23.688 +03:00 [DBG] Removing outdated records from the 'Hash' table...
+2023-06-12 20:54:23.922 +03:00 [DBG] 2 recurring job(s) processed by scheduler.
+2023-06-12 20:54:34.478 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-12 20:54:34.483 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-12 20:54:53.566 +03:00 [DBG] Server desktop-f0slsj8:26180:254968cb heartbeat successfully sent
+2023-06-12 20:58:32.661 +03:00 [INF] Start installing Hangfire SQL objects...
+2023-06-12 20:58:33.479 +03:00 [INF] Hangfire SQL objects installed.
+2023-06-12 20:58:34.252 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-F0SLSJ8@AntonSDB'
+2023-06-12 20:58:34.252 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-06-12 20:58:34.252 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-12 20:58:34.276 +03:00 [DBG] Execution loop BackgroundServerProcess:7bfce027 has started in 10,6012 ms
+2023-06-12 20:58:34.306 +03:00 [INF] Server desktop-f0slsj8:17080:c9092268 successfully announced in 19,6716 ms
+2023-06-12 20:58:34.313 +03:00 [DBG] Execution loop ServerHeartbeatProcess:55dc1800 has started in 6,2521 ms
+2023-06-12 20:58:34.313 +03:00 [INF] Server desktop-f0slsj8:17080:c9092268 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-12 20:58:34.319 +03:00 [DBG] Execution loop ServerWatchdog:3fe87a4e has started in 5,5793 ms
+2023-06-12 20:58:34.322 +03:00 [DBG] Execution loop ServerJobCancellationWatcher:7671f4ec has started in 8,3953 ms
+2023-06-12 20:58:34.332 +03:00 [DBG] Execution loop ExpirationManager:fe3669e8 has started in 13,0465 ms
+2023-06-12 20:58:34.337 +03:00 [DBG] Execution loop CountersAggregator:6e1aaf71 has started in 8,8774 ms
+2023-06-12 20:58:34.341 +03:00 [DBG] Execution loop SqlServerHeartbeatProcess:7b9b7c3d has started in 8,5655 ms
+2023-06-12 20:58:34.342 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-12 20:58:34.342 +03:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2023-06-12 20:58:34.348 +03:00 [DBG] Execution loop Worker:44d236b1 has started in 10,1642 ms
+2023-06-12 20:58:34.352 +03:00 [DBG] Execution loop Worker:23490241 has started in 13,7531 ms
+2023-06-12 20:58:34.357 +03:00 [DBG] Execution loop Worker:0003d491 has started in 19,2617 ms
+2023-06-12 20:58:34.361 +03:00 [DBG] Execution loop Worker:81c2356f has started in 23,4691 ms
+2023-06-12 20:58:34.367 +03:00 [DBG] Execution loop Worker:df71cf2c has started in 28,6954 ms
+2023-06-12 20:58:34.371 +03:00 [DBG] Execution loop Worker:d79c5ff2 has started in 32,6808 ms
+2023-06-12 20:58:34.374 +03:00 [DBG] Execution loop Worker:f592de52 has started in 35,6536 ms
+2023-06-12 20:58:34.378 +03:00 [DBG] Execution loop Worker:c3ba14ac has started in 39,9017 ms
+2023-06-12 20:58:34.382 +03:00 [DBG] Execution loop Worker:b701fa02 has started in 44,4801 ms
+2023-06-12 20:58:34.383 +03:00 [DBG] Removing outdated records from the 'Job' table...
+2023-06-12 20:58:34.389 +03:00 [DBG] Execution loop Worker:c340fed0 has started in 50,5139 ms
+2023-06-12 20:58:34.393 +03:00 [DBG] Execution loop Worker:9e098a07 has started in 54,8641 ms
+2023-06-12 20:58:34.397 +03:00 [DBG] Execution loop Worker:4adfea74 has started in 59,0316 ms
+2023-06-12 20:58:34.398 +03:00 [DBG] Removing outdated records from the 'List' table...
+2023-06-12 20:58:34.405 +03:00 [DBG] Execution loop Worker:4452a0cc has started in 66,5704 ms
+2023-06-12 20:58:34.405 +03:00 [DBG] Execution loop Worker:aeba0b35 has started in 66,5704 ms
+2023-06-12 20:58:34.408 +03:00 [DBG] Execution loop Worker:7738cbf2 has started in 70,0689 ms
+2023-06-12 20:58:34.415 +03:00 [DBG] Removing outdated records from the 'Set' table...
+2023-06-12 20:58:34.415 +03:00 [DBG] Execution loop Worker:78c4a7e8 has started in 76,6562 ms
+2023-06-12 20:58:34.418 +03:00 [DBG] Execution loop Worker:938db194 has started in 80,0411 ms
+2023-06-12 20:58:34.425 +03:00 [DBG] Removing outdated records from the 'Hash' table...
+2023-06-12 20:58:34.425 +03:00 [DBG] Execution loop Worker:c5b39d36 has started in 87,0162 ms
+2023-06-12 20:58:34.428 +03:00 [DBG] Execution loop Worker:c50eb7d6 has started in 90,2519 ms
+2023-06-12 20:58:34.433 +03:00 [DBG] Execution loop Worker:bd57752f has started in 95,0988 ms
+2023-06-12 20:58:34.436 +03:00 [DBG] Execution loop DelayedJobScheduler:84be8e29 has started in 8,3331 ms
+2023-06-12 20:58:34.437 +03:00 [INF] Server desktop-f0slsj8:17080:c9092268 all the dispatchers started
+2023-06-12 20:58:34.442 +03:00 [DBG] Execution loop RecurringJobScheduler:a08feea0 has started in 8,6298 ms
+2023-06-12 20:58:42.368 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-12 20:58:42.373 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-12 20:58:55.102 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-12 20:58:55.102 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-12 20:59:04.370 +03:00 [DBG] Server desktop-f0slsj8:17080:c9092268 heartbeat successfully sent
+2023-06-19 21:59:45.120 +03:00 [INF] Start installing Hangfire SQL objects...
+2023-06-19 21:59:46.718 +03:00 [INF] Hangfire SQL objects installed.
+2023-06-19 21:59:47.991 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-F0SLSJ8@AntonSDB'
+2023-06-19 21:59:47.991 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-06-19 21:59:47.991 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-19 21:59:48.008 +03:00 [DBG] Execution loop BackgroundServerProcess:793bcb62 has started in 10,2346 ms
+2023-06-19 21:59:48.070 +03:00 [INF] Server desktop-f0slsj8:7224:73a316de successfully announced in 43,8286 ms
+2023-06-19 21:59:48.078 +03:00 [DBG] Execution loop ServerHeartbeatProcess:b045379a has started in 6,0809 ms
+2023-06-19 21:59:48.078 +03:00 [INF] Server desktop-f0slsj8:7224:73a316de is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-19 21:59:48.083 +03:00 [DBG] Execution loop ServerWatchdog:56c2acc9 has started in 4,9613 ms
+2023-06-19 21:59:48.087 +03:00 [DBG] Execution loop ServerJobCancellationWatcher:76261f87 has started in 8,5594 ms
+2023-06-19 21:59:48.093 +03:00 [DBG] Execution loop ExpirationManager:f384eba4 has started in 5,0652 ms
+2023-06-19 21:59:48.097 +03:00 [DBG] Execution loop CountersAggregator:70b87adf has started in 8,3306 ms
+2023-06-19 21:59:48.098 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-19 21:59:48.099 +03:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2023-06-19 21:59:48.102 +03:00 [DBG] Execution loop SqlServerHeartbeatProcess:5b8c84ff has started in 9,7448 ms
+2023-06-19 21:59:48.108 +03:00 [DBG] Execution loop Worker:c61dafe9 has started in 10,0875 ms
+2023-06-19 21:59:48.111 +03:00 [DBG] Execution loop Worker:42d5c09c has started in 13,3557 ms
+2023-06-19 21:59:48.115 +03:00 [INF] 2 servers were removed due to timeout
+2023-06-19 21:59:48.119 +03:00 [DBG] Execution loop Worker:333f58eb has started in 20,6738 ms
+2023-06-19 21:59:48.122 +03:00 [DBG] Execution loop Worker:c997f40b has started in 23,7615 ms
+2023-06-19 21:59:48.126 +03:00 [DBG] Execution loop Worker:0f79e24e has started in 28,2712 ms
+2023-06-19 21:59:48.130 +03:00 [DBG] Execution loop Worker:11f41ea7 has started in 32,1336 ms
+2023-06-19 21:59:48.137 +03:00 [DBG] Execution loop Worker:f03cd8ab has started in 38,5093 ms
+2023-06-19 21:59:48.137 +03:00 [DBG] Execution loop Worker:e5601ca6 has started in 38,532 ms
+2023-06-19 21:59:48.141 +03:00 [DBG] Execution loop Worker:ab57837a has started in 42,5927 ms
+2023-06-19 21:59:48.146 +03:00 [DBG] Execution loop Worker:9200fbea has started in 48,157 ms
+2023-06-19 21:59:48.150 +03:00 [DBG] Execution loop Worker:e1e0f1eb has started in 52,1746 ms
+2023-06-19 21:59:48.154 +03:00 [DBG] Execution loop Worker:595ae8a6 has started in 55,8386 ms
+2023-06-19 21:59:48.158 +03:00 [DBG] Execution loop Worker:05f13fb8 has started in 60,1867 ms
+2023-06-19 21:59:48.164 +03:00 [DBG] Execution loop Worker:14801147 has started in 65,7943 ms
+2023-06-19 21:59:48.168 +03:00 [DBG] Execution loop Worker:fb408310 has started in 70,2452 ms
+2023-06-19 21:59:48.174 +03:00 [DBG] Execution loop Worker:dfeb2c99 has started in 75,9596 ms
+2023-06-19 21:59:48.174 +03:00 [DBG] Removing outdated records from the 'Job' table...
+2023-06-19 21:59:48.180 +03:00 [DBG] Execution loop Worker:79fd749e has started in 82,1039 ms
+2023-06-19 21:59:48.185 +03:00 [DBG] Execution loop Worker:538daed4 has started in 87,3281 ms
+2023-06-19 21:59:48.191 +03:00 [DBG] Execution loop Worker:958ac0df has started in 92,6111 ms
+2023-06-19 21:59:48.195 +03:00 [DBG] Execution loop Worker:e5dabd43 has started in 96,7667 ms
+2023-06-19 21:59:48.199 +03:00 [INF] Server desktop-f0slsj8:7224:73a316de all the dispatchers started
+2023-06-19 21:59:48.199 +03:00 [DBG] Execution loop DelayedJobScheduler:8884cef3 has started in 8,7564 ms
+2023-06-19 21:59:48.204 +03:00 [DBG] Execution loop RecurringJobScheduler:ec64e861 has started in 9,6137 ms
+2023-06-19 21:59:48.237 +03:00 [DBG] Removing outdated records from the 'List' table...
+2023-06-19 21:59:48.242 +03:00 [DBG] Removing outdated records from the 'Set' table...
+2023-06-19 21:59:48.246 +03:00 [DBG] Removing outdated records from the 'Hash' table...
+2023-06-19 21:59:48.635 +03:00 [DBG] 2 recurring job(s) processed by scheduler.
+2023-06-19 22:00:03.562 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-19 22:00:03.566 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-19 22:00:09.412 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-19 22:00:09.412 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-06-19 22:00:15.628 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'AntonS.Controllers.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method298(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-06-19 22:00:18.116 +03:00 [DBG] Server desktop-f0slsj8:7224:73a316de heartbeat successfully sent
+2023-06-19 22:02:56.003 +03:00 [INF] Start installing Hangfire SQL objects...
+2023-06-19 22:02:57.121 +03:00 [INF] Hangfire SQL objects installed.
+2023-06-19 22:02:58.534 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-F0SLSJ8@AntonSDB'
+2023-06-19 22:02:58.535 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-06-19 22:02:58.535 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-19 22:02:58.559 +03:00 [DBG] Execution loop BackgroundServerProcess:7f0f7731 has started in 13,9656 ms
+2023-06-19 22:02:58.589 +03:00 [INF] Server desktop-f0slsj8:20140:922b1b4c successfully announced in 23,8142 ms
+2023-06-19 22:02:58.597 +03:00 [DBG] Execution loop ServerHeartbeatProcess:e3e49d38 has started in 6,4099 ms
+2023-06-19 22:02:58.597 +03:00 [INF] Server desktop-f0slsj8:20140:922b1b4c is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-19 22:02:58.603 +03:00 [DBG] Execution loop ServerWatchdog:412d04d2 has started in 5,2355 ms
+2023-06-19 22:02:58.607 +03:00 [DBG] Execution loop ServerJobCancellationWatcher:993b5378 has started in 9,4062 ms
+2023-06-19 22:02:58.614 +03:00 [DBG] Execution loop ExpirationManager:9fb31ebf has started in 6,0855 ms
+2023-06-19 22:02:58.620 +03:00 [DBG] Execution loop CountersAggregator:ce1e69fc has started in 12,3153 ms
+2023-06-19 22:02:58.624 +03:00 [DBG] Execution loop SqlServerHeartbeatProcess:7e628438 has started in 10,9291 ms
+2023-06-19 22:02:58.625 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-19 22:02:58.628 +03:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2023-06-19 22:02:58.632 +03:00 [DBG] Execution loop Worker:cc2fdd5c has started in 13,215 ms
+2023-06-19 22:02:58.637 +03:00 [DBG] Execution loop Worker:370ac931 has started in 18,6057 ms
+2023-06-19 22:02:58.642 +03:00 [DBG] Execution loop Worker:307ba1d9 has started in 23,3053 ms
+2023-06-19 22:02:58.647 +03:00 [DBG] Execution loop Worker:08361070 has started in 28,8059 ms
+2023-06-19 22:02:58.652 +03:00 [DBG] Execution loop Worker:5ee9c43b has started in 34,0832 ms
+2023-06-19 22:02:58.658 +03:00 [DBG] Execution loop Worker:aa00f50c has started in 40,035 ms
+2023-06-19 22:02:58.663 +03:00 [DBG] Execution loop Worker:166dd8a2 has started in 44,8298 ms
+2023-06-19 22:02:58.668 +03:00 [DBG] Execution loop Worker:3362ee1e has started in 50,0317 ms
+2023-06-19 22:02:58.670 +03:00 [DBG] Removing outdated records from the 'Job' table...
+2023-06-19 22:02:58.675 +03:00 [DBG] Execution loop Worker:e87bd7af has started in 56,8782 ms
+2023-06-19 22:02:58.679 +03:00 [DBG] Execution loop Worker:4d58d8c4 has started in 60,3567 ms
+2023-06-19 22:02:58.684 +03:00 [DBG] Execution loop Worker:81e3422b has started in 65,358 ms
+2023-06-19 22:02:58.684 +03:00 [DBG] Removing outdated records from the 'List' table...
+2023-06-19 22:02:58.688 +03:00 [DBG] Execution loop Worker:893c5cba has started in 70,0506 ms
+2023-06-19 22:02:58.689 +03:00 [DBG] Removing outdated records from the 'Set' table...
+2023-06-19 22:02:58.695 +03:00 [DBG] Execution loop Worker:ea8b25da has started in 76,6329 ms
+2023-06-19 22:02:58.699 +03:00 [DBG] Removing outdated records from the 'Hash' table...
+2023-06-19 22:02:58.700 +03:00 [DBG] Execution loop Worker:92f01b4e has started in 80,8671 ms
+2023-06-19 22:02:58.704 +03:00 [DBG] Execution loop Worker:a7974c04 has started in 85,7815 ms
+2023-06-19 22:02:58.707 +03:00 [DBG] Execution loop Worker:dada75d4 has started in 88,7114 ms
+2023-06-19 22:02:58.712 +03:00 [DBG] Execution loop Worker:c3e8e85d has started in 93,5946 ms
+2023-06-19 22:02:58.719 +03:00 [DBG] Execution loop Worker:edd2e456 has started in 100,3828 ms
+2023-06-19 22:02:58.724 +03:00 [DBG] Execution loop Worker:72ba57cb has started in 105,3692 ms
+2023-06-19 22:02:58.730 +03:00 [DBG] Execution loop Worker:3e3a37d1 has started in 111,2321 ms
+2023-06-19 22:02:58.733 +03:00 [DBG] Execution loop DelayedJobScheduler:45388c61 has started in 9,6825 ms
+2023-06-19 22:02:58.734 +03:00 [INF] Server desktop-f0slsj8:20140:922b1b4c all the dispatchers started
+2023-06-19 22:02:58.739 +03:00 [DBG] Execution loop RecurringJobScheduler:b3aa5f2b has started in 10,0047 ms
+2023-06-19 22:03:05.163 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'AntonS.Controllers.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method106(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-06-19 22:06:24.483 +03:00 [INF] Start installing Hangfire SQL objects...
+2023-06-19 22:06:25.524 +03:00 [INF] Hangfire SQL objects installed.
+2023-06-19 22:06:26.355 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-F0SLSJ8@AntonSDB'
+2023-06-19 22:06:26.355 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-06-19 22:06:26.355 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-19 22:06:26.377 +03:00 [DBG] Execution loop BackgroundServerProcess:175e1af0 has started in 9,2788 ms
+2023-06-19 22:06:26.398 +03:00 [INF] Server desktop-f0slsj8:12380:1437532a successfully announced in 14,778 ms
+2023-06-19 22:06:26.406 +03:00 [DBG] Execution loop ServerHeartbeatProcess:7c996e2a has started in 6,6146 ms
+2023-06-19 22:06:26.407 +03:00 [INF] Server desktop-f0slsj8:12380:1437532a is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-19 22:06:26.411 +03:00 [DBG] Execution loop ServerWatchdog:3077dacb has started in 4,5181 ms
+2023-06-19 22:06:26.416 +03:00 [DBG] Execution loop ServerJobCancellationWatcher:19a78737 has started in 8,1973 ms
+2023-06-19 22:06:26.421 +03:00 [DBG] Execution loop ExpirationManager:1a6bb062 has started in 5,6032 ms
+2023-06-19 22:06:26.424 +03:00 [DBG] Execution loop CountersAggregator:22e4fbf5 has started in 7,2112 ms
+2023-06-19 22:06:26.428 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-19 22:06:26.428 +03:00 [DBG] Execution loop SqlServerHeartbeatProcess:c0629ded has started in 7,5919 ms
+2023-06-19 22:06:26.428 +03:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2023-06-19 22:06:26.433 +03:00 [DBG] Execution loop Worker:8012e647 has started in 9,0639 ms
+2023-06-19 22:06:26.437 +03:00 [DBG] Execution loop Worker:8331e471 has started in 12,1634 ms
+2023-06-19 22:06:26.441 +03:00 [INF] 1 servers were removed due to timeout
+2023-06-19 22:06:26.441 +03:00 [DBG] Execution loop Worker:c516a3bb has started in 16,6857 ms
+2023-06-19 22:06:26.445 +03:00 [DBG] Execution loop Worker:f50b9b2d has started in 20,7866 ms
+2023-06-19 22:06:26.449 +03:00 [DBG] Execution loop Worker:a13c696e has started in 24,8242 ms
+2023-06-19 22:06:26.453 +03:00 [DBG] Execution loop Worker:e453b057 has started in 29,0109 ms
+2023-06-19 22:06:26.458 +03:00 [DBG] Execution loop Worker:7a7a6634 has started in 33,6603 ms
+2023-06-19 22:06:26.462 +03:00 [DBG] Execution loop Worker:a480a42b has started in 38,0841 ms
+2023-06-19 22:06:26.467 +03:00 [DBG] Execution loop Worker:6a8e7f54 has started in 42,4727 ms
+2023-06-19 22:06:26.472 +03:00 [DBG] Execution loop Worker:53999f51 has started in 47,5664 ms
+2023-06-19 22:06:26.476 +03:00 [DBG] Execution loop Worker:ff078866 has started in 51,855 ms
+2023-06-19 22:06:26.485 +03:00 [DBG] Execution loop Worker:03cd3778 has started in 60,2714 ms
+2023-06-19 22:06:26.486 +03:00 [DBG] Removing outdated records from the 'Job' table...
+2023-06-19 22:06:26.489 +03:00 [DBG] Execution loop Worker:741f5895 has started in 65,1041 ms
+2023-06-19 22:06:26.493 +03:00 [DBG] Execution loop Worker:39c3c903 has started in 68,8199 ms
+2023-06-19 22:06:26.498 +03:00 [DBG] Execution loop Worker:f5dfaa55 has started in 73,5851 ms
+2023-06-19 22:06:26.502 +03:00 [DBG] Execution loop Worker:6e500f92 has started in 78,1497 ms
+2023-06-19 22:06:26.509 +03:00 [DBG] Execution loop Worker:a29c37af has started in 84,3217 ms
+2023-06-19 22:06:26.513 +03:00 [DBG] Removing outdated records from the 'List' table...
+2023-06-19 22:06:26.513 +03:00 [DBG] Execution loop Worker:5024f577 has started in 89,1339 ms
+2023-06-19 22:06:26.518 +03:00 [DBG] Execution loop Worker:faa6301e has started in 93,6235 ms
+2023-06-19 22:06:26.521 +03:00 [DBG] Execution loop Worker:380e39ce has started in 97,1687 ms
+2023-06-19 22:06:26.526 +03:00 [DBG] Execution loop DelayedJobScheduler:1c984dd3 has started in 12,3595 ms
+2023-06-19 22:06:26.526 +03:00 [INF] Server desktop-f0slsj8:12380:1437532a all the dispatchers started
+2023-06-19 22:06:26.531 +03:00 [DBG] Execution loop RecurringJobScheduler:0dcd03d5 has started in 9,2457 ms
+2023-06-19 22:06:26.537 +03:00 [DBG] Removing outdated records from the 'Set' table...
+2023-06-19 22:06:26.549 +03:00 [DBG] Removing outdated records from the 'Hash' table...
+2023-06-19 22:06:30.627 +03:00 [INF] HTTP GET / responded 200 in 2786.1083 ms
+2023-06-19 22:06:32.829 +03:00 [ERR] HTTP GET /Login/OpenLoginPage responded 500 in 53.2586 ms
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'AntonS.Controllers.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method106(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-06-19 22:06:32.858 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'AntonS.Controllers.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method106(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-06-19 22:07:14.083 +03:00 [INF] Start installing Hangfire SQL objects...
+2023-06-19 22:07:15.124 +03:00 [INF] Hangfire SQL objects installed.
+2023-06-19 22:07:15.926 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-F0SLSJ8@AntonSDB'
+2023-06-19 22:07:15.926 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-06-19 22:07:15.927 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-19 22:07:15.950 +03:00 [DBG] Execution loop BackgroundServerProcess:64b4799c has started in 17,0397 ms
+2023-06-19 22:07:15.976 +03:00 [INF] Server desktop-f0slsj8:10428:27efb36b successfully announced in 15,5944 ms
+2023-06-19 22:07:15.985 +03:00 [DBG] Execution loop ServerHeartbeatProcess:0764f6b0 has started in 6,8657 ms
+2023-06-19 22:07:15.985 +03:00 [INF] Server desktop-f0slsj8:10428:27efb36b is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-19 22:07:15.989 +03:00 [DBG] Execution loop ServerWatchdog:3cde8774 has started in 3,9868 ms
+2023-06-19 22:07:15.993 +03:00 [DBG] Execution loop ServerJobCancellationWatcher:12991b47 has started in 7,3737 ms
+2023-06-19 22:07:15.998 +03:00 [DBG] Execution loop ExpirationManager:6ae94a04 has started in 7,2114 ms
+2023-06-19 22:07:16.002 +03:00 [DBG] Execution loop CountersAggregator:64919079 has started in 8,1251 ms
+2023-06-19 22:07:16.005 +03:00 [DBG] Execution loop SqlServerHeartbeatProcess:ae2ab0ca has started in 7,4975 ms
+2023-06-19 22:07:16.007 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-19 22:07:16.008 +03:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2023-06-19 22:07:16.011 +03:00 [DBG] Execution loop Worker:24eb3012 has started in 8,9057 ms
+2023-06-19 22:07:16.015 +03:00 [DBG] Execution loop Worker:f5f511d9 has started in 12,74 ms
+2023-06-19 22:07:16.018 +03:00 [DBG] Execution loop Worker:bb5740f5 has started in 16,3879 ms
+2023-06-19 22:07:16.023 +03:00 [DBG] Execution loop Worker:e2eef0e6 has started in 20,6555 ms
+2023-06-19 22:07:16.027 +03:00 [DBG] Execution loop Worker:78858916 has started in 25,1109 ms
+2023-06-19 22:07:16.032 +03:00 [DBG] Execution loop Worker:c515dbc0 has started in 29,7534 ms
+2023-06-19 22:07:16.035 +03:00 [DBG] Execution loop Worker:215a9520 has started in 32,9985 ms
+2023-06-19 22:07:16.038 +03:00 [DBG] Execution loop Worker:fef1f37a has started in 35,9818 ms
+2023-06-19 22:07:16.042 +03:00 [DBG] Execution loop Worker:39dc2d49 has started in 40,2713 ms
+2023-06-19 22:07:16.043 +03:00 [DBG] Removing outdated records from the 'Job' table...
+2023-06-19 22:07:16.046 +03:00 [DBG] Execution loop Worker:6e52c838 has started in 44,4443 ms
+2023-06-19 22:07:16.051 +03:00 [DBG] Execution loop Worker:707baefb has started in 49,5681 ms
+2023-06-19 22:07:16.052 +03:00 [DBG] Removing outdated records from the 'List' table...
+2023-06-19 22:07:16.057 +03:00 [DBG] Execution loop Worker:23c3bdb6 has started in 54,6319 ms
+2023-06-19 22:07:16.057 +03:00 [DBG] Removing outdated records from the 'Set' table...
+2023-06-19 22:07:16.060 +03:00 [DBG] Execution loop Worker:9743e547 has started in 57,956 ms
+2023-06-19 22:07:16.064 +03:00 [DBG] Execution loop Worker:8ee176f0 has started in 61,8106 ms
+2023-06-19 22:07:16.064 +03:00 [DBG] Removing outdated records from the 'Hash' table...
+2023-06-19 22:07:16.068 +03:00 [DBG] Execution loop Worker:005a171a has started in 66,1932 ms
+2023-06-19 22:07:16.074 +03:00 [DBG] Execution loop Worker:07479b4e has started in 71,8059 ms
+2023-06-19 22:07:16.076 +03:00 [DBG] Execution loop Worker:98a52828 has started in 74,3832 ms
+2023-06-19 22:07:16.080 +03:00 [DBG] Execution loop Worker:194ae3a0 has started in 78,4179 ms
+2023-06-19 22:07:16.085 +03:00 [DBG] Execution loop Worker:793932f2 has started in 83,6851 ms
+2023-06-19 22:07:16.091 +03:00 [DBG] Execution loop Worker:69a56476 has started in 88,924 ms
+2023-06-19 22:07:16.094 +03:00 [DBG] Execution loop DelayedJobScheduler:0647e69b has started in 8,4835 ms
+2023-06-19 22:07:16.094 +03:00 [INF] Server desktop-f0slsj8:10428:27efb36b all the dispatchers started
+2023-06-19 22:07:16.099 +03:00 [DBG] Execution loop RecurringJobScheduler:41d80f2d has started in 8,7189 ms
+2023-06-19 22:07:20.116 +03:00 [INF] HTTP GET / responded 200 in 2479.5578 ms
+2023-06-19 22:07:21.894 +03:00 [ERR] HTTP GET /Login/OpenLoginPage responded 500 in 64.8079 ms
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'AntonS.Controllers.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method106(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-06-19 22:07:21.923 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'AntonS.Controllers.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method106(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-06-19 22:10:03.345 +03:00 [INF] Start installing Hangfire SQL objects...
+2023-06-19 22:10:04.358 +03:00 [INF] Hangfire SQL objects installed.
+2023-06-19 22:10:05.154 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-F0SLSJ8@AntonSDB'
+2023-06-19 22:10:05.155 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-06-19 22:10:05.155 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-19 22:10:05.178 +03:00 [DBG] Execution loop BackgroundServerProcess:7ae98d40 has started in 16,7598 ms
+2023-06-19 22:10:05.205 +03:00 [INF] Server desktop-f0slsj8:11736:b206c4f9 successfully announced in 18,7592 ms
+2023-06-19 22:10:05.212 +03:00 [INF] Server desktop-f0slsj8:11736:b206c4f9 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-19 22:10:05.212 +03:00 [DBG] Execution loop ServerHeartbeatProcess:0f2a8468 has started in 5,9482 ms
+2023-06-19 22:10:05.217 +03:00 [DBG] Execution loop ServerWatchdog:b421a005 has started in 4,4155 ms
+2023-06-19 22:10:05.220 +03:00 [DBG] Execution loop ServerJobCancellationWatcher:28f4f582 has started in 7,5958 ms
+2023-06-19 22:10:05.224 +03:00 [DBG] Execution loop ExpirationManager:9ee85f2e has started in 6,2913 ms
+2023-06-19 22:10:05.228 +03:00 [DBG] Execution loop CountersAggregator:98099667 has started in 7,3739 ms
+2023-06-19 22:10:05.232 +03:00 [DBG] Aggregating records in 'Counter' table...
+2023-06-19 22:10:05.232 +03:00 [DBG] Execution loop SqlServerHeartbeatProcess:00f1afee has started in 7,4764 ms
+2023-06-19 22:10:05.233 +03:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2023-06-19 22:10:05.238 +03:00 [DBG] Execution loop Worker:627dc972 has started in 9,8472 ms
+2023-06-19 22:10:05.241 +03:00 [INF] 1 servers were removed due to timeout
+2023-06-19 22:10:05.241 +03:00 [DBG] Execution loop Worker:4dcc4591 has started in 12,746 ms
+2023-06-19 22:10:05.246 +03:00 [DBG] Execution loop Worker:b499988a has started in 17,8015 ms
+2023-06-19 22:10:05.250 +03:00 [DBG] Execution loop Worker:ec9dbe04 has started in 22,2089 ms
+2023-06-19 22:10:05.255 +03:00 [DBG] Execution loop Worker:5c86273b has started in 27,2212 ms
+2023-06-19 22:10:05.259 +03:00 [DBG] Execution loop Worker:143d322f has started in 31,1854 ms
+2023-06-19 22:10:05.264 +03:00 [DBG] Execution loop Worker:2bdba779 has started in 35,2585 ms
+2023-06-19 22:10:05.265 +03:00 [DBG] Removing outdated records from the 'Job' table...
+2023-06-19 22:10:05.269 +03:00 [DBG] Execution loop Worker:139fe20b has started in 40,6075 ms
+2023-06-19 22:10:05.276 +03:00 [DBG] Removing outdated records from the 'List' table...
+2023-06-19 22:10:05.276 +03:00 [DBG] Execution loop Worker:ed341fb1 has started in 47,2154 ms
+2023-06-19 22:10:05.279 +03:00 [DBG] Execution loop Worker:0cdcd9fd has started in 50,6848 ms
+2023-06-19 22:10:05.285 +03:00 [DBG] Execution loop Worker:4775d194 has started in 56,3932 ms
+2023-06-19 22:10:05.285 +03:00 [DBG] Execution loop Worker:6796948e has started in 56,3996 ms
+2023-06-19 22:10:05.285 +03:00 [DBG] Removing outdated records from the 'Set' table...
+2023-06-19 22:10:05.289 +03:00 [DBG] Execution loop Worker:3261151b has started in 61,0109 ms
+2023-06-19 22:10:05.295 +03:00 [DBG] Execution loop Worker:5e7f41a4 has started in 66,274 ms
+2023-06-19 22:10:05.299 +03:00 [DBG] Execution loop Worker:088801e8 has started in 70,4979 ms
+2023-06-19 22:10:05.304 +03:00 [DBG] Execution loop Worker:221958ae has started in 76,0052 ms
+2023-06-19 22:10:05.311 +03:00 [DBG] Removing outdated records from the 'Hash' table...
+2023-06-19 22:10:05.311 +03:00 [DBG] Execution loop Worker:dd0f914d has started in 81,3681 ms
+2023-06-19 22:10:05.314 +03:00 [DBG] Execution loop Worker:363a3c90 has started in 86,0468 ms
+2023-06-19 22:10:05.319 +03:00 [DBG] Execution loop Worker:614d81eb has started in 90,8263 ms
+2023-06-19 22:10:05.326 +03:00 [DBG] Execution loop Worker:42394052 has started in 97,8222 ms
+2023-06-19 22:10:05.331 +03:00 [INF] Server desktop-f0slsj8:11736:b206c4f9 all the dispatchers started
+2023-06-19 22:10:05.332 +03:00 [DBG] Execution loop DelayedJobScheduler:bb8d53dd has started in 9,3428 ms
+2023-06-19 22:10:05.338 +03:00 [DBG] Execution loop RecurringJobScheduler:59b2d859 has started in 10,4894 ms
+2023-06-19 22:10:08.926 +03:00 [INF] HTTP GET / responded 200 in 2520.2151 ms
+2023-06-19 22:10:10.938 +03:00 [ERR] HTTP GET /Login/OpenLoginPage responded 500 in 52.6507 ms
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'AntonS.Controllers.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method106(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-06-19 22:10:10.967 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'AntonS.Controllers.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method106(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)

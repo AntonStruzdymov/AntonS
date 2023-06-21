@@ -24,7 +24,7 @@ namespace AntonS.DB.CQS.QueriesHandler
                 .Include(user => user.AccessLevel)
                 .FirstOrDefaultAsync(user => user.Id.Equals(request.UserId)))
                 .AccessLevel.name;
-            if(role == null)
+            if(role != null)
             {
                 return role;
             }

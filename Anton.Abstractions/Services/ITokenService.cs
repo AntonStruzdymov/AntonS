@@ -10,5 +10,7 @@ namespace AntonS.Abstractions.Services
     public interface ITokenService
     {
         Task<string> GetJwtTokenAsync(UserDTO dto);
+        Task AddRefreshTokenAsync(int userId, Guid refreshToken);
+        Task<TokenDTO> RefreshTokenAsync(Guid refreshToken);
     }
 }

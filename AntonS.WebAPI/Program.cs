@@ -6,6 +6,7 @@ using AntonS.Repositories.Implementation;
 using AntonS.Business;
 using AntonDB;
 using Microsoft.EntityFrameworkCore;
+using AntonS.DB.CQS.QueriesHandler;
 
 namespace AntonS.WebAPI
 {
@@ -42,6 +43,11 @@ namespace AntonS.WebAPI
             builder.Services.AddTransient<ICommentService, CommentService>();
             builder.Services.AddTransient<IUSerService, UserService>();
             builder.Services.AddTransient<IAcessLevelService, AccessLevelService>();
+            builder.Services.AddTransient<ITokenService, TokenService>();
+
+            builder.Services.AddMediatR(
+                cfg =>
+                    cfg.RegisterServicesFromAssemblyContaining<GetUserByRefreshTokenQueryHandler>());
 
             builder.Services.AddAutoMapper(typeof(Program));
 

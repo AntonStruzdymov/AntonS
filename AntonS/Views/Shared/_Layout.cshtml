@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">AntonS</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -20,19 +20,19 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li class="nav-item">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Article" asp-action="Index">Article</a>
+                            <a class="nav-link" asp-area="" asp-controller="Article" asp-action="Index">Article</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                         @{
                             if (Context.User.Claims.Any() && Context.User.Identity.Name.Equals("Struzdymov@mail.ru"))
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Index">AdminPage</a>
+                                    <a class="nav-link" asp-area="" asp-controller="Admin" asp-action="Index">AdminPage</a>
                                 </li>                                
                             }
                         }
@@ -70,32 +70,29 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 <style>
+    .navbar{
+        background-color:#041858;
+        color: white;
+    }
+    a.navbar-brand{
+        color: white;
+        font-family:'Brush Script MT';        
+    }
+    a.nav-link{
+        color: white;
+        font-family:'Brush Script MT';
+    }
+    .nav-item{
+        color: white;
+    }
+    .btn{
+        background-color:#041858;
+        color:greenyellow;
+    }
     footer{
-        background-color:cyan;
+        background-color:#030E3F;
         border-color: black;
         border: solid, 10px;
-    }
-    a{
-        text-decoration:none;
-        color: white;
-        text-transform:none;
-        transition: 0.25s ease;
-    }
-    ul{
-        display: flex;
-        flex-wrap: wrap;
-        list-style: none;
-    }
-    ul li{
-        text-decoration:none;
-        margin: 0 0.75em 0 0.75em
-    }
-    ul:hover a{
-        color: #575757;
-    }
-    ul:hover a:hover{
-        color: #8EAAFB;
-        box-shadow: 0 2px 0 0 currentColor;
     }
 </style>
 </html>
