@@ -1,0 +1,15 @@
+﻿@model ChoseCommentToEditModel
+
+<h1>
+    Pick comment to edit
+</h1>
+<form asp-controller="Admin" asp-action="EditComment" method="get">
+    <select asp-for="Id" class="form-select">
+        <option selected>Pick entity to work with</option>
+        @foreach (var comment in Model.Comments)
+        {
+            <option value="@comment.Id">@comment.AuthorName @comment.Id</option>
+        }
+    </select>
+    <button class="btn btn-outline-secondary" type="submit" value="OK">Confirm</button>
+</form>

@@ -3,6 +3,7 @@ using AntonDB.Entities;
 using AntonS.Abstractions.Data.Repositories;
 using AntonS.Core.DTOs;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +30,7 @@ namespace AntonS.Repositories.Implementation
 
         public async Task<bool> IsUserExistsAsync(string email)
         {
-           var user = await _context.Users.Select(u => u.Email.Equals(email)).FirstOrDefaultAsync();
+           var user = !(await _context.Users.Select(u => u.Email).FirstOrDefaultAsync()).IsNullOrEmpty();
            return user;
         }
     }

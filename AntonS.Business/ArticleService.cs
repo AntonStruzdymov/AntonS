@@ -113,8 +113,16 @@ namespace AntonS.Business
             switch (sourceId)
             {
                 case 1:
-                    var textNode1 = doc.DocumentNode.SelectSingleNode("//div[@class = 'news-text']");
-                    textNode1.RemoveClass("news-widget");
+                    var textNode1 = doc.DocumentNode.SelectSingleNode("//div[@class = 'news-text']");                    
+                    var nodesForDelete = textNode1.SelectNodes("//div[@class = 'news-widget']");
+                    if (nodesForDelete != null)
+                    {
+                        foreach(var node in nodesForDelete)
+                        {
+                            node.RemoveAllChildren();
+                            textNode1.RemoveClass(node.XPath);
+                        }
+                    }                    
                     var content1 = textNode1.InnerHtml;                    
                     return content1;
                 case 2:

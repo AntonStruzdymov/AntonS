@@ -24,6 +24,12 @@
     <input type="hidden" asp-for="AvailableSources"/>
     <div>
         <input type="submit" value="Confirm" />        
-        <a class="btn-secondary m-lg-4" style="border:solid; border-color:black " asp-action="Index" asp-controller="Article" method="get" >Cancel</a>       
+        <a class="btn-secondary" asp-action="Index" asp-controller="Article" method="get" >Cancel</a>       
     </div>
 </form>
+
+ <style>
+     btn-secondary{
+         margin: 10px;
+     }
+ </style>

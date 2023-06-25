@@ -3,16 +3,46 @@
 <h1>
     Pick article to edit
 </h1>
+
 <form asp-controller="Admin" asp-action="EditArticle" method="get">
     <select asp-for="Id" class="form-select">
         <option selected>Pick entity to work with</option>
         @foreach (var article in Model.Articles)
         {
-                  <option value="@article.Id">@article.Title</option>
+                  <option id="listedItem" value="@article.Id">@article.Title</option>
         }
     </select>
     <button class="btn btn-outline-secondary" type="submit" value="OK">Confirm</button>
 </form>
 <form asp-controller="Admin" asp-action="DeleteAllArticles" method="get">
-    <button class="btn btn-alert-danger" type="submit" value="Delete All">Delete All Articles</button>
+    <button class="btn btn-alert-danger" type="submit" value="Delete All">Delete All Articles</button>    
 </form>
+<a class="btn" id="createButton" asp-action="Create" asp-controller="Article">Create</a>
+
+<style>
+    #createButton {
+        background-color: #041858;
+        position:relative;
+        margin: 10px;
+        top: -107px;
+        left: 300px;
+    }
+    form{
+        margin: 50px;
+        padding:10px;
+    }
+    .btn-outline-secondary{
+        margin:10px;
+    }
+    .form-select{
+        background-color:greenyellow;
+        color: #041858;
+        border: solid, 5px;
+        border-color: #041858;
+    }
+
+</style>
+
+<script src="~/js/selectFromList.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>

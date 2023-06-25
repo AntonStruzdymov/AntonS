@@ -9,13 +9,13 @@
 <form asp-controller="Admin" asp-action="ChangeArticle" method="post">
     <input type="hidden" asp-for="Id" value="@Model.Id" />
     <p>
-        <input type="text" asp-for="Title" placeholder="@Model.Title"/>
+        <input type="text" id="title" asp-for="Title" placeholder="@Model.Title"/>
     </p>
     <p>
-        <input type="text" asp-for="Description" placeholder="Введите новое краткое описание" />
+        <input type="text" id="description" asp-for="Description" placeholder="description" />
     </p>
     <p>
-        <input type="text" asp-for="FullText" value="@Html.Raw(Model.FullText)" placeholder="Исправленный текст" height="100 px"/>
+        <input type="text" id="fulltext" asp-for="FullText" placeholder="Исправленный текст"/>
     </p>
     <p>
         <input type="number" asp-for="PositivityRating" placeholder="Введите рейтинг"/>
@@ -34,9 +34,12 @@
 
 
 <style>
-    input[type="text"]{
-        height: fit-content;
-        width: fit-content;
-        
+    #title{
+        width: 200px;
+        height: 50px;
+    }
+    #description{
+        width: 200px;
+        height: 50px;
     }
 </style>

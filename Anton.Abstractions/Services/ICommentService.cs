@@ -11,5 +11,8 @@ namespace AntonS.Abstractions.Services
     {
         Task<List<CommentDTO>> GetCommentsByArticleIdAsync(int articleId);
         Task AddComment(CommentDTO comment);
+        Task<CommentDTO> GetCommentById(int id);
+        Task DeleteComment(int id);
+        Task UpdateCommentAsync(int id, List<PatchDTO> list);
     }
 }

@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntonS.WebAPI", "AntonS.Web
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntonS.DB.CQS", "AntonS.DB.CQS\AntonS.DB.CQS.csproj", "{9950D0B4-173F-4023-8161-AE5063F7860D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3C2BD6C7-3FD0-48EE-B0C4-0CA11E478DE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

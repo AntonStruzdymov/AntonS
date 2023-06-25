@@ -86,7 +86,7 @@ namespace AntonS.Controllers
                 case "Article":
                     return RedirectToAction("EditArticles");
                 case "Comment":
-                    return RedirectToAction("EditComments");
+                    return RedirectToAction("ChooseArticleToEditComments");
             }
             return RedirectToAction("Index");
         }
@@ -197,15 +197,62 @@ namespace AntonS.Controllers
             return RedirectToAction("Index");
         }
         [HttpGet]
-        public async Task<IActionResult> EditComments()
+        public async Task<IActionResult> ChooseArticleToEditComments()
         {
             var articlesDto = await _articleService.GetAllArticlesAsync();
             var articles = articlesDto.Select(u => _mapper.Map<ArticleShortModel>(u)).ToList();
-            return View(new ArticlesListModel()
+            return View("EditComments",new ArticlesListModel()
             {
                 Articles = articles
             });
-        }       
+        }
+        [HttpGet]
+        public async Task<IActionResult> EditComments(int id) 
+        {
+            var article = await _commentService.GetCommentsByArticleIdAsync(id);
+            return View("EditComment", new ChoseCommentToEditModel()
+            {
+                Comments = article
+            });
+        }
+        [HttpGet]
+        public async Task<IActionResult> EditComment(ChoseCommentToEditModel model)
+        {
+            var comment = await _commentService.GetCommentById(model.Id);
+            return View("ChangeComment", new ChangeCommentModel()
+            {
+                CommentText = comment.CommentText,
+                AuthorName = comment.AuthorName,
+                ArticleID = comment.ArticleID,
+                Id = model.Id
+            });
+        }
+        [HttpPost]
+        public async Task<IActionResult> ChangeComment(ChangeCommentModel model)
+        {
+            if (model.IsDeleted)
+            {
+                await _commentService.DeleteComment(model.Id);
+            }
+            var valuesToPatch = new List<PatchDTO>();
+            var modelValues = model.GetType().GetProperties();
+            foreach (var property in modelValues)
+            {
+                if (property.GetValue(model) != null)
+                {
+                    var patchDto = new PatchDTO();
+                    patchDto.Name = property.Name;
+                    patchDto.Value = property.GetValue(model);
+                    if (!Int32.TryParse(patchDto.Value.ToString(),out int num))
+                    {
+                        valuesToPatch.Add(patchDto);
+                    }
+                    
+                }
+            }
+            await _commentService.UpdateCommentAsync(model.Id, valuesToPatch);
+            return RedirectToAction("Index");
+        }
 
     }
 }

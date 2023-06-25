@@ -14,7 +14,18 @@ namespace AntonS.WebAPI
     {
         public static void Main(string[] args)
         {
+            const string CORS_POLICY = "DefaultCorePolicy";
             var builder = WebApplication.CreateBuilder(args);
+
+            builder.Services.AddCors(opt =>
+            opt.AddPolicy(name: CORS_POLICY,
+                  policy =>
+                  {
+                      policy.WithOrigins("htpp://localhost:4200")
+                      .AllowAnyMethod()
+                      .AllowAnyHeader();
+                  }
+            ));
 
             // Add services to the container.
             builder.Services.AddDbContext<AntonDBContext>(
@@ -64,6 +75,7 @@ namespace AntonS.WebAPI
 
             app.UseAuthorization();
 
+            app.UseCors(CORS_POLICY);
 
             app.MapControllers();
 

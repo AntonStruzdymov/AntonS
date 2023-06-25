@@ -30,5 +30,19 @@ namespace AntonS.Business
             await _unitOfWork.Comments.AddAsync(_mapper.Map<Comment>(comment));
             await _unitOfWork.SaveChangesAsync();
         }
+        public async Task<CommentDTO> GetCommentById(int id)
+        {
+            var comment = await _unitOfWork.Comments.GetByIdAsync(id);
+            return _mapper.Map<CommentDTO>(comment);
+        }
+        public async Task DeleteComment (int id)
+        {
+            await _unitOfWork.Comments.Remove(id);
+        }
+        public async Task UpdateCommentAsync(int id, List<PatchDTO> list)
+        {
+            await _unitOfWork.Comments.PatchAsync(id, list);
+            await _unitOfWork.SaveChangesAsync();
+        }
     }
 }

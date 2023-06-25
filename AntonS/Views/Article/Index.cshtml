@@ -4,10 +4,7 @@
 <form action="/Article/SearchedArticlesList"  method=Post class="form-text col-6 "  >
     @Html.TextBoxFor(model=>model.Searched)
     <input type="submit" value="Submit"/>
-    @if(Context.User.Claims.Any() && Context.User.Identity.Name.Equals("Struzdymov@mail.ru"))
-    {
-        <a class="btn bg-primary col-6"   asp-action="Create" asp-controller="Article" >Create</a>
-    }        
+         
 </form> 
 <form class="dropdown" asp-action="Sort" asp-controller="Article" method="get">    
   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">

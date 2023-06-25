@@ -1,0 +1,17 @@
+﻿@model ChangeCommentModel
+
+
+<form asp-controller="Admin" asp-action="ChangeComment">
+    <div>@Model.AuthorName</div>
+    <textarea>@Model.CommentText</textarea>
+    <input type="hidden" asp-for="Id" value="@Model.Id" />
+    <input type="text" asp-for="CommentText" />
+    <button class="btn btn-secondary" type="submit">Confirm</button>
+</form>
+
+
+<form asp-controller="Admin" asp-action="ChangeComment" method="post">
+    <input type="hidden" asp-for="IsDeleted" value="true" />
+    <input type="hidden" asp-for="Id" value="@Model.Id" />
+    <button class="btn btn-primary" type="submit">Delete User</button>
+</form>

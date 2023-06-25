@@ -1160,3 +1160,45 @@ System.InvalidOperationException: Unable to resolve service for type 'Microsoft.
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-06-24 17:43:24.265 +03:00 [ERR] User with that email does not exist (Parameter 'email')
+System.ArgumentException: User with that email does not exist (Parameter 'email')
+   at AntonS.Business.UserService.IsPasswordCorrectAsync(String email, String password) in C:\Users\Asus\Desktop\Антон\Project\AntonS.Business\UserService.cs:line 84
+   at AntonS.Controllers.LoginController.Login(LoginPageModel model) in C:\Users\Asus\Desktop\Антон\Project\AntonS\Controllers\LoginController.cs:line 38
+2023-06-24 17:43:40.123 +03:00 [ERR] User with that email does not exist (Parameter 'email')
+System.ArgumentException: User with that email does not exist (Parameter 'email')
+   at AntonS.Business.UserService.IsPasswordCorrectAsync(String email, String password) in C:\Users\Asus\Desktop\Антон\Project\AntonS.Business\UserService.cs:line 84
+   at AntonS.Controllers.LoginController.Login(LoginPageModel model) in C:\Users\Asus\Desktop\Антон\Project\AntonS\Controllers\LoginController.cs:line 38
+2023-06-24 17:46:11.197 +03:00 [ERR] User with that email does not exist (Parameter 'email')
+System.ArgumentException: User with that email does not exist (Parameter 'email')
+   at AntonS.Business.UserService.IsPasswordCorrectAsync(String email, String password) in C:\Users\Asus\Desktop\Антон\Project\AntonS.Business\UserService.cs:line 84
+   at AntonS.Controllers.LoginController.Login(LoginPageModel model) in C:\Users\Asus\Desktop\Антон\Project\AntonS\Controllers\LoginController.cs:line 38
+2023-06-24 17:48:54.987 +03:00 [ERR] User with that email does not exist (Parameter 'email')
+System.ArgumentException: User with that email does not exist (Parameter 'email')
+   at AntonS.Business.UserService.IsPasswordCorrectAsync(String email, String password) in C:\Users\Asus\Desktop\Антон\Project\AntonS.Business\UserService.cs:line 84
+   at AntonS.Controllers.LoginController.Login(LoginPageModel model) in C:\Users\Asus\Desktop\Антон\Project\AntonS\Controllers\LoginController.cs:line 38
+2023-06-24 17:55:06.850 +03:00 [ERR] User with that email does not exist (Parameter 'email')
+System.ArgumentException: User with that email does not exist (Parameter 'email')
+   at AntonS.Business.UserService.IsPasswordCorrectAsync(String email, String password) in C:\Users\Asus\Desktop\Антон\Project\AntonS.Business\UserService.cs:line 84
+   at AntonS.Controllers.LoginController.Login(LoginPageModel model) in C:\Users\Asus\Desktop\Антон\Project\AntonS\Controllers\LoginController.cs:line 38
+2023-06-25 16:44:38.720 +03:00 [ERR] Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at HtmlAgilityPack.HtmlNodeCollection.RemoveAt(Int32 index)
+   at HtmlAgilityPack.HtmlNodeCollection.Remove(HtmlNode item)
+   at AntonS.Business.ArticleService.GetArticleContentAsync(String url, Int32 sourceId) in C:\Users\Asus\Desktop\Антон\Project\AntonS.Business\ArticleService.cs:line 120
+   at AntonS.Business.ArticleService.<>c__DisplayClass9_0.<<GetFullArticleContentAsync>b__0>d.MoveNext() in C:\Users\Asus\Desktop\Антон\Project\AntonS.Business\ArticleService.cs:line 88
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Parallel.<>c__50`1.<<ForEachAsync>b__50_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at AntonS.Business.ArticleService.GetFullArticleContentAsync(List`1 articles) in C:\Users\Asus\Desktop\Антон\Project\AntonS.Business\ArticleService.cs:line 86
+   at AntonS.Controllers.AdminController.GetNews() in C:\Users\Asus\Desktop\Антон\Project\AntonS\Controllers\AdminController.cs:line 54
+2023-06-25 16:44:44.119 +03:00 [ERR] Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at HtmlAgilityPack.HtmlNodeCollection.RemoveAt(Int32 index)
+   at HtmlAgilityPack.HtmlNodeCollection.Remove(HtmlNode item)
+   at AntonS.Business.ArticleService.GetArticleContentAsync(String url, Int32 sourceId) in C:\Users\Asus\Desktop\Антон\Project\AntonS.Business\ArticleService.cs:line 120
+   at AntonS.Business.ArticleService.<>c__DisplayClass9_0.<<GetFullArticleContentAsync>b__0>d.MoveNext() in C:\Users\Asus\Desktop\Антон\Project\AntonS.Business\ArticleService.cs:line 88
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Parallel.<>c__50`1.<<ForEachAsync>b__50_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at AntonS.Business.ArticleService.GetFullArticleContentAsync(List`1 articles) in C:\Users\Asus\Desktop\Антон\Project\AntonS.Business\ArticleService.cs:line 86
+   at AntonS.Controllers.AdminController.GetNews() in C:\Users\Asus\Desktop\Антон\Project\AntonS\Controllers\AdminController.cs:line 54
