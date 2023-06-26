@@ -154,14 +154,14 @@ namespace AntonS.Controllers
                 {
                     var sortedArticles = articles.OrderByDescending(a => a.PositivityRating).ToList();
                     model.Articles = sortedArticles.Select(s => mapper.Map<ArticleShortModel>(s))
-                        .Skip(pageSize*page)
+                        .Skip(pageSize*(page-1))
                         .Take(pageSize).ToList();
                 }
                 else
                 {
                     var sortedArticles = articles.OrderBy(a => a.PositivityRating).ToList();
                     model.Articles = sortedArticles.Select(s => mapper.Map<ArticleShortModel>(s))
-                        .Skip(pageSize*page)
+                        .Skip(pageSize*(page-1))
                         .Take(pageSize).ToList();
                 }
                 return View("Index", new ArticlesListModel()

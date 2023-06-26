@@ -12,10 +12,10 @@
                   <option id="listedItem" value="@article.Id">@article.Title</option>
         }
     </select>
-    <button class="btn btn-outline-secondary" type="submit" value="OK">Confirm</button>
+    <button class="btn" type="submit" value="OK">Confirm</button>
 </form>
 <form asp-controller="Admin" asp-action="DeleteAllArticles" method="get">
-    <button class="btn btn-alert-danger" type="submit" value="Delete All">Delete All Articles</button>    
+    <button class="btn" type="submit" value="Delete All">Delete All Articles</button>    
 </form>
 <a class="btn" id="createButton" asp-action="Create" asp-controller="Article">Create</a>
 
@@ -24,21 +24,34 @@
         background-color: #041858;
         position:relative;
         margin: 10px;
-        top: -107px;
+        top: -119px;
         left: 300px;
+    }
+    #createButton:hover{
+            background-color: greenyellow;
+            border-color: #041858;
+            color: #041858;
     }
     form{
         margin: 50px;
         padding:10px;
     }
-    .btn-outline-secondary{
+    .btn{
         margin:10px;
+    }
+    .btn:hover{
+            background-color: greenyellow;
+            border-color: #041858;
+            color: #041858;
     }
     .form-select{
         background-color:greenyellow;
         color: #041858;
         border: solid, 5px;
         border-color: #041858;
+    }
+    body{
+        background: linear-gradient(#B7C1E1,#041858);
     }
 
 </style>

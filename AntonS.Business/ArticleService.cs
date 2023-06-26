@@ -65,7 +65,7 @@ namespace AntonS.Business
                 var feed = SyndicationFeed.Load(reader);
                 await Parallel.ForEachAsync(feed.Items.Where(item => !urls.Contains(item.Id)).ToArray(), token,
                     (item, token) =>
-                    {
+                    {                                               
                         articles.Add(new ArticleDTO()
                         {
                             ArticleSourceURL = item.Id,

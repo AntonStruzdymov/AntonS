@@ -14,7 +14,7 @@
         <option value="Article">Articles</option>
         <option value="Comment">Comments</option>
     </select>
-    <button class="btn btn-secondary" type="submit" value="OK">Confirm</button>
+    <button class="btn" id="confirm" type="submit" value="OK">Confirm</button>
 </form>
 
 <style>
@@ -31,12 +31,17 @@
         background-color: #041858;
         color: greenyellow;
         position:relative;
+        top: 40%;
+        left: 40%;
         padding: 5px;
         margin: 10px;
     }
 
-    .btn-secondary:focus {
+    .btn-secondary:hover {
         transform:rotateX('45');
+        background-color:greenyellow;
+            border-color: #041858;
+            color: #041858;
     }
     .form-select{
         background-color: greenyellow;
@@ -49,7 +54,7 @@
     form{
         position:relative;
         top: 150px;
-        left: 35%;
+        left: 30%;
     }
     btn.btn-outline-secondary{
             background-color: #041858;
@@ -57,5 +62,17 @@
             position: relative;
             padding: 5px;
             margin: 10px;
+    }
+    #confirm{
+        background-color: #041858;
+        color: greenyellow;
+        position: relative;
+        padding: 5px;
+        margin: 10px;
+    }
+    #confirm:hover{
+            background-color: greenyellow;
+            border-color: #041858;
+            color: #041858;
     }
 </style>

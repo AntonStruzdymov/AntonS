@@ -5,7 +5,7 @@
     @Html.Raw(Model.Description)
     <form method="get">
         <input type="hidden" asp-for="Id" value="@Model.Id" />
-        <button asp-controller="Article" asp-action="ArticleDetailsWithComments">Read more...</button>        
+        <button id="show_more" asp-controller="Article" asp-action="ArticleDetailsWithComments">Read more...</button>        
     </form>
 </div>
 <style>
@@ -21,5 +21,17 @@
         margin-left:20px;
         background-color: gainsboro;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+    #show_more{
+        background-color: #041858;
+        border-color: greenyellow;
+        border-radius: 5px;
+        border: solid, 5px;
+        color: greenyellow;
+        padding: 5px;
+        margin: 5px;
+    }
+    p:nth-of-type(3){
+        visibility:hidden;
     }
 </style>

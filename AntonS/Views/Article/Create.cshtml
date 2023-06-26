@@ -23,13 +23,45 @@
     </div>
     <input type="hidden" asp-for="AvailableSources"/>
     <div>
-        <input type="submit" value="Confirm" />        
-        <a class="btn-secondary" asp-action="Index" asp-controller="Article" method="get" >Cancel</a>       
+        <input id="confirmbutton" type="submit" value="Confirm" />        
+        <a class="btn-outline-primary" asp-action="Index" asp-controller="Article" method="get" >Cancel</a>       
     </div>
 </form>
 
  <style>
-     btn-secondary{
+    .btn-outline-primary{
          margin: 10px;
+         padding:10px;
+         border:solid, 5px;
+         border-radius: 5px;
+        background-color: #041858;
+        color:greenyellow;
+        border-color: greenyellow;
+
+     }
+     #confirmbutton{
+        margin: 10px;
+        padding: 5px;
+        border: solid, 5px;
+        border-radius: 5px;
+        background-color: #041858;
+        color: greenyellow;
+        border-color: greenyellow;
+     }
+     body{
+        background: linear-gradient(#B7C1E1,#041858);
+     }
+     .form-control{
+         background-color: lightgray;
+        color: #041858;
+     }
+
+    .form-control:focus {
+        background-color: greenyellow;
+        color: #041858;
+        
+    }
+     .form-select{
+        background-color: lightgray;
      }
  </style>
